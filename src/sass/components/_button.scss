@@ -1,0 +1,11 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $font-main;
+  color: $color-btn-light;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
+}
