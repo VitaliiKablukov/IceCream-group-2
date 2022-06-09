@@ -190,12 +190,24 @@ img {
   }
 }
 
+.btn__icon {
+  fill: #D41443;
+  width: 4px;
+  height: 8px;
+  left: 1223px;
+  top: 59px;
+}
+
 .mob-menu__btn--open {
   border: none;
   margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   fill: #d41443;
+}
+
+.mob-menu__icons {
+  stroke: #d41443;
 }
 
 .hero {

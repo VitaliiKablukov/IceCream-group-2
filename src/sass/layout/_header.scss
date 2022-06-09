@@ -65,9 +65,16 @@
     }
 }
 
-// .btn__icon {
-// border: 2px solid #D41443;
-// }
+.btn__icon {
+fill:  #D41443;
+
+    width: 4px;
+    height: 8px;
+    left: 1223px;
+    top: 59px;
+
+   
+}
 
 
 .mob-menu__btn--open {
@@ -76,4 +83,8 @@
     background-color: transparent;
     cursor: pointer;    
     fill: $bg-btn-dark;
+}
+
+.mob-menu__icons {
+stroke: $color-text-accent;
 }
