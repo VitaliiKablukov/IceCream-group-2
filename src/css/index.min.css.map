@@ -17,6 +17,7 @@
         "../sass/layout/_header.scss",
         "../sass/layout/_hero.scss",
         "../sass/layout/_products.scss",
+        "../sass/layout/_about.scss",
         "../sass/layout/_advantages.scss",
         "../sass/layout/_gallery.scss",
         "../sass/layout/_cutomer-reviews.scss",
