@@ -1,5 +1,10 @@
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+
 .container {
-    background-color: rosybrown;
     display: flex;
     padding-top: 8px;
     @include mediamin(768px) {
@@ -11,6 +16,7 @@
     @include mediamin(1280px) {
             display: flex;
             align-items: center;
+            position: absolute;
         }
     
 }
@@ -59,9 +65,9 @@
     }
 }
 
-.btn__icon {
-border: 2px solid #D41443;
-}
+// .btn__icon {
+// border: 2px solid #D41443;
+// }
 
 
 .mob-menu__btn--open {

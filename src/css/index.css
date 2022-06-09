@@ -119,8 +119,12 @@ img {
   border: none;
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+}
+
 .container {
-  background-color: rosybrown;
   display: flex;
   padding-top: 8px;
 }
@@ -135,6 +139,7 @@ img {
   .navigation {
     display: flex;
     align-items: center;
+    position: absolute;
   }
 }
 
@@ -185,15 +190,82 @@ img {
   }
 }
 
-.btn__icon {
-  border: 2px solid #D41443;
-}
-
 .mob-menu__btn--open {
   border: none;
   margin-left: auto;
   background-color: transparent;
   cursor: pointer;
   fill: #d41443;
+}
+
+.hero {
+  padding-top: 192px;
+  padding-bottom: 158px;
+  background-color: #ffb8ca;
+}
+
+.hero .container {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 102px;
+    padding-bottom: 190px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 146px;
+    padding-bottom: 316px;
+  }
+}
+
+.hero__title {
+  max-width: 218px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero__title--accent {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 96.5%;
+  /* or 46px */
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.anchors__menu {
+  display: flex;
+  margin-top: 20px;
+}
+
+.anchors__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.anchor__link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  background: #D41443;
+  border-radius: 20px;
+  padding: 7px 15px 7px 13px;
 }
 /*# sourceMappingURL=index.css.map */
