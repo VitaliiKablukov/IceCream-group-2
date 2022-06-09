@@ -54,8 +54,15 @@
             background-color: $bg-btn-light;
             border-radius: 22px;
             font-weight: 700;
+
+            
     }
 }
+
+.btn__icon {
+border: 2px solid #D41443;
+}
+
 
 .mob-menu__btn--open {
     border: none;

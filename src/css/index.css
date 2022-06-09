@@ -149,23 +149,22 @@ img {
   }
 }
 
-.navigation__link {
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  color: #FFFFFF;
-}
-
-.navigation__link--current {
-  color: #d41443;
-}
-
 .navigation__item:not(:last-child) {
   margin-right: 35px;
 }
 
+.navigation__link {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
 .navigation__link:hover,
 .navigation__link:focus {
+  color: #d41443;
+}
+
+.navigation__link--current {
   color: #d41443;
 }
 
@@ -180,10 +179,14 @@ img {
     margin-left: 32px;
     width: 160px;
     height: 44px;
-    background: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 22px;
     font-weight: 700;
   }
+}
+
+.btn__icon {
+  border: 2px solid #D41443;
 }
 
 .mob-menu__btn--open {
