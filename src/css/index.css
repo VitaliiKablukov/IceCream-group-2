@@ -526,6 +526,14 @@ img {
   }
 }
 
+.back2 {
+  background-color: #f0d1a5;
+}
+
+.back3 {
+  background-color: #c2e297;
+}
+
 .front {
   transform: rotateY(180deg);
 }

@@ -1,18 +1,24 @@
-
-    
-document.getElementByClassName('product-btn').onclick = function ()
-{
-  var elementOne = document.getElementByClassName('product-description');
-  var elementTwo = document.getElementByClassName('back');
-  //перевірка, чи  є  данний класс у елемента 
-    if (elementOne.classList.contains("front")) {
-      //якщо true то видаляє класс у елемента 
-      elementOne.classList.remove("front");
-      elementTwo.classList.remove("back-visibility");
-    
-    } else {
-        //якщо false то додає класс до елемента
-    elementOne.classList.add("front");
-    elementTwo.classList.remove("back-visibility");
-  }
+// script для секції Products
+// функція додавання та видалення класу при кліку на кнопку 
+function myFlipCard_1() {
+    // пошук   елемента за id
+    var elementOne = document.getElementById('product1');
+    var elementTwo = document.getElementById('back1');
+    //додавання та видалення класу
+    elementOne.classList.toggle("front");
+    elementTwo.classList.toggle("back-visibility");
+}
+function myFlipCard_2() {
+    var elementOne = document.getElementById('product2');
+    var elementTwo = document.getElementById('back2');
+    elementOne.classList.toggle("front");
+    elementTwo.classList.toggle("back-visibility");
+    elementTwo.classList.toggle("back2");
+}
+function myFlipCard_3() {
+    var elementOne = document.getElementById('product3');
+    var elementTwo = document.getElementById('back3');
+    elementOne.classList.toggle("front");
+    elementTwo.classList.toggle("back-visibility");
+    elementTwo.classList.toggle("back3");
 }

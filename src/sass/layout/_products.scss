@@ -324,6 +324,7 @@
   transition: box-shadow 3600ms $cubic-bezier;
   backface-visibility: hidden; /*невидима задня грань елемента*/
 }
+
 .back {
   flex-direction: column;
   flex-grow: 1;
@@ -344,7 +345,12 @@
     line-height: calc(34 / 30);
   }
 }
-
+.back2 {
+  background-color: $bg-beige-color;
+}
+.back3 {
+  background-color: $bg-green-color;
+}
 .front {
   transform: rotateY(180deg);
 }
