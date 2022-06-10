@@ -1,0 +1,167 @@
+.about {
+  background-color: $bg-section;
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/about-bg-mob-1x-min.png);
+    background-repeat: no-repeat;
+    background-position-y: 574px;
+    background-position-x: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-mob-2x-min.png);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 99px;
+    background-image: url(../images/about/about-bg-1x-min.png);
+    background-repeat: no-repeat;
+    background-position-y: 255px;
+    background-position-x: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/about/about-bg-2x-min.png);
+    }
+  }
+}
+.container {
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 34px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    padding-right: 161px;
+    max-width: 1280px;
+  }
+}
+
+.about-text-top {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-subtitle;
+
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 16px;
+  }
+}
+
+.about-title {
+  font-family: 'Titan One';
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text-accent;
+
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    margin-bottom: 60px;
+  }
+}
+.about-img {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 139px;
+  }
+}
+.about-text {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $color-text-black;
+  margin-bottom: 40px;
+  max-width: 220px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    max-width: 334px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 463px;
+    margin-bottom: 32px;
+  }
+}
+.about-text-bottom {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: $color-text-general;
+  margin-bottom: 20px;
+  max-width: 220px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    max-width: 334px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    line-height: 1.92;
+    max-width: 463px;
+  }
+}
+.about-button {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  color: $color-text-accent;
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  background-color: $color-text-white;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
+
+.about-wrap1 {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about-wrap {
+  @media screen and (min-width: 1280px) {
+    margin-top: 91px;
+  }
+}
