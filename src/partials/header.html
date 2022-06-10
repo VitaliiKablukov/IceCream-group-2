@@ -26,11 +26,8 @@
       </ul>
     </nav>
     <button type="button" class="mob-menu__btn--open">
-      <svg width="20" height="12">
-        <use
-          class="mob-menu__icons"
-          href="./images/symbol-defs.svg#icon-Burger"
-        ></use>
+      <svg class="mob-menu__icons" width="20" height="12">
+        <use href="./images/symbol-defs.svg#icon-Burger"></use>
       </svg>
     </button>
     <button type="button" class="button header__btn">
@@ -40,4 +37,37 @@
       </svg>
     </button>
   </div>
+  <div class="mob-menu is-hidden">
+    <div class="container">
+      <button type="button" class="mob-menu__btn--close">
+        <svg class="btn__icon--close" width="14" height="14">
+          <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+        </svg>
+      </button>
+      <button type="button" class="button header__btn mob-menu__btn">
+        Buy now
+        <svg class="btn__icon--arrow" width="4" height="8">
+          <use href="./images/symbol-defs.svg#icon-btn-arrow"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu__list">
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link navigation__link--current">Home</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link">About us</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link">How it’s made?</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link">Our products</a>
+        </li>
+        <li class="mob-menu__item">
+          <a href="" class="mob-menu__link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="./mobile-menu.js"></script>
 </header>
