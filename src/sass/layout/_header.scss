@@ -1,16 +1,31 @@
 .header {
     position: absolute;
     width: 100%;
-}
-
-
-.container {
-    display: flex;
-    padding-top: 8px;
-    @include mediamin(768px) {
-            padding-top: 32px;
+    .container {
+            display: flex;
+            padding-top: 8px;
+    
+            @include mediamin(768px) {
+                padding-top: 32px;
+            }
         }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: $color-text-accent;
+}
+
+.logo__icon {
+    margin-right: 20px;
+}
+
 
 .navigation {
     @include mediamin(1280px) {
@@ -37,12 +52,13 @@
 .navigation__link {
     display: flex;
     align-items: center;
+    font-weight: 700;
     color: $color-text-white;
-}
-
-.navigation__link:hover,
-.navigation__link:focus {
-    color: $color-text-accent;
+    transition: color 250ms $cubic-bezier;
+        &:hover,
+        &:focus {
+            color: $color-text-accent;
+        }
 }
 
 .navigation__link--current {
@@ -51,6 +67,7 @@
 
 .header__btn {
     display: none;
+
     @include mediamin(768px) {
             display: block;
             margin-right: 0;
@@ -59,21 +76,24 @@
             height: 44px;
             background-color: $bg-btn-light;
             border-radius: 22px;
-            font-weight: 700;
-
-            
+            font-weight: 700;    
+            transition: color 250ms $cubic-bezier;
+            transition: background-color 250ms $cubic-bezier;
     }
+    @include mediamin(1280px) {
+        margin-left: auto;
+    }   
 }
 
-.btn__icon {
-fill:  #D41443;
+.header__btn:hover,
+.header__btn:focus {
+    color: $color-btn-dark;
+     background-color: $bg-btn-dark-hover;
+ }
 
-    width: 4px;
-    height: 8px;
-    left: 1223px;
-    top: 59px;
-
-   
+.btn__icon--arrow {
+    margin-left: 12px;
+    fill: currentColor;
 }
 
 
@@ -83,6 +103,9 @@ fill:  #D41443;
     background-color: transparent;
     cursor: pointer;    
     fill: $bg-btn-dark;
+    @include mediamin(1280px) {
+        display: none;
+    }
 }
 
 .mob-menu__icons {

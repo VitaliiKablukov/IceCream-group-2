@@ -2,16 +2,9 @@
   <div class="container">
     <nav class="navigation">
       <a href="" class="logo">
-        <picture>
-          <source
-            srcset="
-              ./images/header/logo-header-1x-min.png 1x,
-              ./images/header/logo-header-2x-min.png 2x
-            "
-            media="(min-width:1280px)"
-          />
-          <img src="./images/header/logo-header-1x-min.png" alt="logo" />
-        </picture>
+        <svg class="logo__icon" width="50" height="50">
+          <use href="./images/symbol-defs.svg#icon-logo"></use></svg
+        >Icecream
       </a>
 
       <ul class="navigation__list">
@@ -36,14 +29,14 @@
       <svg width="20" height="12">
         <use
           class="mob-menu__icons"
-          href="./images/symbol-defs.svg#icon-Burger-open"
+          href="./images/symbol-defs.svg#icon-Burger"
         ></use>
       </svg>
     </button>
     <button type="button" class="button header__btn">
       Buy now
-      <svg class="btn__icon" width="4" height="8">
-        <use href="./images/symbol-defs.svg#icon-facebook"></use>
+      <svg class="btn__icon--arrow" width="4" height="8">
+        <use href="./images/symbol-defs.svg#icon-btn-arrow"></use>
       </svg>
     </button>
   </div>
