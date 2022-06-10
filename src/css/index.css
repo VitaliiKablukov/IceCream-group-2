@@ -119,6 +119,10 @@ img {
   border: none;
 }
 
+.advantages {
+  background-color: #fff5f6;
+}
+
 @media screen and (max-width: 767.9px) {
   .advantages {
     padding-top: 0;
