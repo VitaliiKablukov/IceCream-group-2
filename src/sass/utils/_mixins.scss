@@ -19,3 +19,11 @@
     @content;
   }
 }
+
+// Gallery grid mixin
+@mixin grid($grs, $gre, $gcs, $gce) {
+  grid-row-start: $grs;
+  grid-row-end: $gre;
+  grid-column-start: $gcs;
+  grid-column-end: $gce;
+}
