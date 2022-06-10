@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titan One', cursive;
+  font-family: "Titan One", cursive;
 }
 
 .visually-hidden {
@@ -48,7 +48,7 @@ h6 {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   letter-spacing: 0.04em;
 }
@@ -63,7 +63,6 @@ body {
   margin: 0 auto;
   max-width: 320px;
 }
-
 @media screen and (min-width: 768px) {
   .container {
     padding-left: 32px;
@@ -71,7 +70,6 @@ body {
     max-width: 768px;
   }
 }
-
 @media screen and (min-width: 1280px) {
   .container {
     padding-left: 16px;
@@ -90,7 +88,6 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 @media screen and (min-width: 1280px) {
   .section {
     padding-bottom: 60px;
@@ -118,4 +115,67 @@ img {
   margin: 0 auto;
   border: none;
 }
-/*# sourceMappingURL=index.css.map */
+
+.slide.slide-review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide__img {
+  margin-bottom: 16px;
+}
+
+.slide-review__gradientbox {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .slide-review__gradientbox {
+    max-width: 822px;
+  }
+}
+
+.gradient-wrapper {
+  padding: 43px 50px 17px 50px;
+  background-color: tomato;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .gradient-wrapper {
+    padding: 6px 23px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gradient-wrapper {
+    max-width: 1034px;
+    padding: 32px 105px;
+  }
+}
+
+.slide-review__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: #000000;
+  margin: auto;
+  letter-spacing: 0.04em;
+  display: inline;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-image: repeating-linear-gradient(to bottom, #e1e1e1, #e1e1e1);
+  background-position: center bottom 1px;
+  text-align: center;
+}
+
+.slide-review__name {
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.8;
+  text-align: center;
+  color: #000000;
+}/*# sourceMappingURL=index.css.map */
