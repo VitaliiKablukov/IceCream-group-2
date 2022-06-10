@@ -93,7 +93,8 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-direction: row;
-    max-width: 280px;
+    width: 280px;
+    min-height: 489px;
     &:not(:last-child) {
       margin-bottom: 140px;
     }
@@ -108,6 +109,7 @@
   @include mediamin(1280px) {
     flex-direction: column;
     max-width: 394px;
+    min-height: 535px;
     flex-basis: calc((100% - 32px * 3) / 3);
     //margin-right: 32px;
   }
@@ -221,6 +223,7 @@
 .product-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
   margin-right: 39px;
   margin-left: 39px;
@@ -258,6 +261,8 @@
     line-height: calc(34 / 30);
   }
 }
+//Стилізація 3 крапок в картках продукту
+
 .product-title::after {
   content: '\25CF \25CF \25CF ';
   display: inline-block;
@@ -286,6 +291,8 @@
     line-height: calc(28 / 16);
   }
 }
+//Стилізація кнопки
+
 .product-btn {
   width: 40px;
   height: 40px;
@@ -300,3 +307,51 @@
     margin: 60px auto;
   }
 }
+//Стилізація flip ефекту картки
+.product-description {
+  perspective: 1000px; /*3D effect */
+}
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 3600ms $cubic-bezier;
+  backface-visibility: hidden; /*невидима задня грань елемента*/
+}
+.back {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  //padding: 15px;
+  border-radius: 24px;
+  background-color: $bg-accent-color;
+  transform: rotateY(180deg);
+  text-transform: uppercase;
+  @include mediamin(320px) {
+    padding: 160px 15px 0px;
+  }
+  @include mediamin(768px) {
+    padding: 118px 15px 0px;
+  }
+  @include mediamin(1280px) {
+    padding: 165px 15px 0px;
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+.back-visibility {
+  transform: rotateY(360deg);
+}
+// .btn-back {
+//   //margin-bottom: 40px;
+// }

@@ -231,7 +231,8 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .product-item {
     flex-direction: row;
-    max-width: 280px;
+    width: 280px;
+    min-height: 489px;
   }
   .product-item:not(:last-child) {
     margin-bottom: 140px;
@@ -249,6 +250,7 @@ img {
   .product-item {
     flex-direction: column;
     max-width: 394px;
+    min-height: 535px;
     flex-basis: calc((100% - 96px) / 3);
   }
 }
@@ -379,6 +381,7 @@ img {
 .product-description {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
   margin-right: 39px;
   margin-left: 39px;
@@ -474,4 +477,59 @@ img {
   .product-btn {
     margin: 60px auto;
   }
+}
+
+.product-description {
+  perspective: 1000px;
+  /*3D effect */
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 3600ms cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+  /*невидима задня грань елемента*/
+}
+
+.back {
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  border-radius: 24px;
+  background-color: #ffb8ca;
+  transform: rotateY(180deg);
+  text-transform: uppercase;
+}
+@media screen and (min-width: 320px) {
+  .back {
+    padding: 160px 15px 0px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .back {
+    padding: 118px 15px 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .back {
+    padding: 165px 15px 0px;
+    font-size: 30px;
+    line-height: 1.1333333333;
+  }
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back-visibility {
+  transform: rotateY(360deg);
 }/*# sourceMappingURL=index.css.map */
