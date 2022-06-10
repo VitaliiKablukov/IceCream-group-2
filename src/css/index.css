@@ -118,4 +118,142 @@ img {
   margin: 0 auto;
   border: none;
 }
+
+.gallery {
+  background-image: linear-gradient(#fff5f6 37%, #ffffff 37%, #ffffff);
+}
+
+.gallery__image-set {
+  display: grid;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__image-set {
+    grid-column-gap: 2px;
+    grid-row-gap: 0.666px;
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(8, 13.333px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__image-set {
+    grid-column-gap: 4px;
+    grid-row-gap: 1.333px;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(8, 26.666px);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__image-set {
+    grid-column-gap: 6px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(8, 46.666px);
+  }
+}
+
+.gallery__thumb {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__thumb {
+    max-width: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__thumb {
+    max-width: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .gallery__thumb {
+    max-width: 140px;
+  }
+}
+
+.gallery__thumb:hover, .gallery__thumb:focus {
+  z-index: 1;
+  transform: scale(2);
+}
+
+.thumb-1 {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.thumb-2 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-bottom: 6px;
+}
+
+.thumb-3 {
+  grid-row-start: 5;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.thumb-4 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.thumb-5 {
+  grid-row-start: 4;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.thumb-6 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.thumb-7 {
+  grid-row-start: 5;
+  grid-row-end: 8;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.thumb-8 {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.thumb-9 {
+  grid-row-start: 4;
+  grid-row-end: 7;
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.thumb-10 {
+  grid-row-start: 3;
+  grid-row-end: 6;
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+.gallery__image {
+  border-radius: 15%;
+}
 /*# sourceMappingURL=index.css.map */
