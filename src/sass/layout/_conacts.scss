@@ -237,6 +237,7 @@
 
   &--submit {
     margin: 0 auto;
+    padding-right: 0;
   }
 }
 
@@ -285,7 +286,7 @@
   border-radius: 22px;
   transition: transform 250ms $cubic-bezier;
   @media screen and (max-width: 767.9px) {
-    width: 96%;
+    width: 320px;
   }
 }
 .button-close {

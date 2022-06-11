@@ -691,6 +691,7 @@ img {
 
 .contacts__btn--submit {
   margin: 0 auto;
+  padding-right: 0;
 }
 
 .contacts__icon {
@@ -743,7 +744,7 @@ img {
 
 @media screen and (max-width: 767.9px) {
   .modal-franch {
-    width: 96%;
+    width: 320px;
   }
 }
 
