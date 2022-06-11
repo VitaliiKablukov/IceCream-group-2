@@ -2,27 +2,10 @@
 .products-section {
   width: 100%;
 }
-.container-products {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @include mediamin(768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @include mediamin(1280px) {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 /* заголовки секції Products */
 .subtitle-products {
   font-family: $font-h;
-  font-style: normal;
-  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-subtitle;
   font-size: 18px;
@@ -42,9 +25,7 @@
 }
 .title-products {
   font-weight: 400;
-
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-text-accent;
   font-size: 34px;
@@ -59,7 +40,8 @@
   @include mediamin(1280px) {
     font-size: 58px;
     line-height: calc(66 / 58);
-    margin-bottom: 261px;
+    margin-bottom: 258px;
+    letter-spacing: 0.06em;
   }
 }
 /*Картки продуктів секції Products*/
@@ -92,7 +74,7 @@
   flex-direction: column;
   max-width: 280px;
   min-height: 489px;
-  @include mediamax(767px) {
+  @include mediamax(767.98px) {
     &:not(:last-child) {
       margin-bottom: 140px;
     }
@@ -131,7 +113,7 @@
   background-repeat: no-repeat;
   transform: translate(0, -50%);
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     width: 224px;
     height: 224px;
     margin-top: -20px;
@@ -149,7 +131,7 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/products/products-1-2x-min.png');
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url('../images/products/products-1-1x-tablet-min.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -173,7 +155,7 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/products/products-2-2x-min.png');
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url('../images/products/products-2-1x-tablet-min.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -197,7 +179,7 @@
     (min-resolution: 2dppx) {
     background-image: url('../images/products/products-3-2x-min.png');
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
     background-image: url('../images/products/products-3-1x-tablet-min.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -238,17 +220,13 @@
   margin-bottom: 70px;
 
   font-family: $font-h;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: calc(23 / 20);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 160px;
-  @include mediamin(320px) {
-    margin-top: 160px;
-  }
+
   @include mediamin(768px) {
     margin-top: 118px;
   }
@@ -273,19 +251,18 @@
 }
 .product-text {
   font-family: $font-main;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
   text-align: center;
-  letter-spacing: 0.04em;
-
+  margin-bottom: 32px;
   @include mediamin(768px) {
     line-height: calc(25 / 14);
   }
   @include mediamin(1280px) {
     font-size: 16px;
     line-height: calc(28 / 16);
+    margin-bottom: 60px;
   }
 }
 /*Стилізація кнопки*/
@@ -294,14 +271,14 @@
   width: 40px;
   height: 40px;
   padding: 0;
-  margin: 32px auto 40px;
+  margin: 0 auto 40px;
   background-color: transparent;
   fill: $color-text-accent;
   border-radius: 50%;
   border: none;
 
   @include mediamin(1280px) {
-    margin: 60px auto;
+    margin-bottom: 60px;
   }
 }
 /*Стилізація flip ефекту картки*/
@@ -330,8 +307,8 @@
   border-radius: 24px;
   background-color: $bg-accent-color;
   transform: rotateY(180deg);
-  text-transform: uppercase;
-  @include mediamax(767px) {
+
+  @include mediamax(767.98px) {
     max-width: 280px;
     min-height: 489px;
     padding: 160px 15px 0px;
@@ -361,5 +338,8 @@
 }
 .back-visibility {
   transform: rotateY(360deg);
+}
+.back-title {
+  text-transform: uppercase;
 }
 /* end section Products */

@@ -122,31 +122,10 @@ img {
   width: 100%;
 }
 
-.container-products {
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media screen and (min-width: 768px) {
-  .container-products {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container-products {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
 /* заголовки секції Products */
 .subtitle-products {
   font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffa5ba;
   font-size: 18px;
@@ -171,7 +150,6 @@ img {
 .title-products {
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
   font-size: 34px;
@@ -189,7 +167,8 @@ img {
   .title-products {
     font-size: 58px;
     line-height: 1.1379310345;
-    margin-bottom: 261px;
+    margin-bottom: 258px;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -227,7 +206,7 @@ img {
   max-width: 280px;
   min-height: 489px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .product-item:not(:last-child) {
     margin-bottom: 140px;
   }
@@ -269,7 +248,7 @@ img {
   background-repeat: no-repeat;
   transform: translate(0, -50%);
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .product-item::before {
     width: 224px;
     height: 224px;
@@ -292,12 +271,12 @@ img {
     background-image: url("../images/products/products-1-2x-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .product-item:nth-child(1)::before {
     background-image: url("../images/products/products-1-1x-tablet-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
   .product-item:nth-child(1)::before {
     background-image: url("../images/products/products-1-2x-tablet-min.png");
   }
@@ -321,12 +300,12 @@ img {
     background-image: url("../images/products/products-2-2x-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .product-item:nth-child(2)::before {
     background-image: url("../images/products/products-2-1x-tablet-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
   .product-item:nth-child(2)::before {
     background-image: url("../images/products/products-2-2x-tablet-min.png");
   }
@@ -350,12 +329,12 @@ img {
     background-image: url("../images/products/products-3-2x-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .product-item:nth-child(3)::before {
     background-image: url("../images/products/products-3-1x-tablet-min.png");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
   .product-item:nth-child(3)::before {
     background-image: url("../images/products/products-3-2x-tablet-min.png");
   }
@@ -397,19 +376,12 @@ img {
   display: inline-block;
   margin-bottom: 70px;
   font-family: "Titan One", cursive;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-top: 160px;
-}
-@media screen and (min-width: 320px) {
-  .product-title {
-    margin-top: 160px;
-  }
 }
 @media screen and (min-width: 768px) {
   .product-title {
@@ -439,12 +411,11 @@ img {
 
 .product-text {
   font-family: "DM Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.04em;
+  margin-bottom: 32px;
 }
 @media screen and (min-width: 768px) {
   .product-text {
@@ -455,6 +426,7 @@ img {
   .product-text {
     font-size: 16px;
     line-height: 1.75;
+    margin-bottom: 60px;
   }
 }
 
@@ -463,7 +435,7 @@ img {
   width: 40px;
   height: 40px;
   padding: 0;
-  margin: 32px auto 40px;
+  margin: 0 auto 40px;
   background-color: transparent;
   fill: #d41443;
   border-radius: 50%;
@@ -471,7 +443,7 @@ img {
 }
 @media screen and (min-width: 1280px) {
   .product-btn {
-    margin: 60px auto;
+    margin-bottom: 60px;
   }
 }
 
@@ -504,9 +476,8 @@ img {
   border-radius: 24px;
   background-color: #ffb8ca;
   transform: rotateY(180deg);
-  text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .back {
     max-width: 280px;
     min-height: 489px;
@@ -544,6 +515,10 @@ img {
 
 .back-visibility {
   transform: rotateY(360deg);
+}
+
+.back-title {
+  text-transform: uppercase;
 }
 
 /* end section Products *//*# sourceMappingURL=index.css.map */
