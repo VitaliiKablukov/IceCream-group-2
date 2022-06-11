@@ -126,6 +126,7 @@ img {
 .subtitle-products {
   font-family: "Titan One", cursive;
   text-align: center;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: #ffa5ba;
   font-size: 18px;
