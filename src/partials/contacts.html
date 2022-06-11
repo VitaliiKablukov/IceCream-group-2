@@ -1,1 +1,124 @@
 
+    <section class="section section--bg">
+      <div class="container container--bg">
+        <h2 class="visually-hidden">Contacts</h2>
+        <ul class="contacts-list">
+          <li class="contacts-list__item">
+            <ul class="contacts-block">
+              <li class="contacts-block__item contacts-block__item--beige">
+                <p class="contacts-block__category">CAFE</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title contacts-block__title--marg">Chicago</p>
+                <div class="txt-wrapper">
+                  <p class="contacts-block__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title">Monday - Friday</p>
+                <p class="contacts-block__text contacts-block__text--pink contacts-block__title--marg">06:00 AM - 10:00 PM</p>
+                <p class="contacts-block__title">Saturday - Sunday</p>
+                <p class="contacts-block__text contacts-block__text--pink">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="tel:+61(0)383766284">+61(0)383766284</a></p>
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="mailto:noreply@envato.com">noreply@envato.com</a></p>
+              </li>
+            </ul>
+          </li>
+          <li class="contacts-list__item">
+            <ul class="contacts-block">
+              <li class="contacts-block__item contacts-block__item--green">
+                <p class="contacts-block__category ">FOODTRUCK</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title contacts-block__title--marg">Los Angeles</p>
+                <div class="txt-wrapper">
+                  <p class="contacts-block__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title">Monday - Friday</p>
+                <p class="contacts-block__text contacts-block__text--pink contacts-block__title--marg">06:00 AM - 10:00 PM</p>
+                <p class="contacts-block__title">Saturday - Sunday</p>
+                <p class="contacts-block__text contacts-block__text--pink">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="tel:+61(0)383766284">+61(0)383766284</a></p>
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="mailto:noreply@envato.com">noreply@envato.com</a></p>
+              </li>
+            </ul>
+          </li>
+          <li class="contacts-list__item">
+            <ul class="contacts-block">
+              <li class="contacts-block__item contacts-block__item--beige">
+                <p class="contacts-block__category">CAFE</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title contacts-block__title--marg">New York</p>
+                <div class="txt-wrapper">
+                  <p class="contacts-block__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                </div>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__title">Monday - Friday</p>
+                <p class="contacts-block__text contacts-block__text--pink contacts-block__title--marg">06:00 AM - 10:00 PM</p>
+                <p class="contacts-block__title">Saturday - Sunday</p>
+                <p class="contacts-block__text contacts-block__text--pink">08:00 AM - 16:00 PM</p>
+              </li>
+              <li class="contacts-block__item">
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="tel:+61(0)383766284">+61(0)383766284</a></p>
+                <p class="contacts-block__text contacts-block__text--gray"><a class = "contacts-block__link" href="mailto:noreply@envato.com">noreply@envato.com</a></p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="btn-wrapper">
+          <button type="button" class="button contacts__btn" data-modal-open1>Our Locations
+            <svg width="20" height="10" class="contacts__icon">
+              <use href="images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <button type="button" class="button contacts__btn contacts__btn--light" data-modal-open>Franchise
+            <svg width="20" height="10" class="contacts__icon--dark contacts__icon">
+              <use href="images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="backdrop backdrop__contacts is-hidden" data-modal>
+          <div class="modal-franch">
+            <form class="form" action="#">
+              <strong class="form__title">Leave your details, we will call you back in 1 minute</strong>
+              <div class="form__field">
+                <label for="username" class="form__label">Name</label>
+                <input type="text" name="username" id="username" class="form__input " />
+              </div>
+              <div class="form__field">
+                <label for="tel" class="form__label">Phone number</label>
+                <input type="tel" name="tel" id="tel" class="form__input " />
+              </div>
+              <button type="submit" class="contacts__btn contacts__btn--submit button">Отправить</button>
+        
+            </form>
+            <button type="button" class="close"  data-modal-close>
+              
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop backdrop__contacts is-hidden" data-modal1>
+      <div class="modal-franch">
+        <h3 class="form__title">We are located here</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+          defer></script>
+        <button type="button" class="close" data-modal-close1>
+        </button>
+      </div>
+    </div>
+    </div>
+    </section>
