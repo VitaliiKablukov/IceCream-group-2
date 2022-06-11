@@ -157,7 +157,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: #FFA5BA;
+  color: #ffa5ba;
   margin-bottom: 16px;
 }
 
@@ -184,7 +184,7 @@ img {
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #D41443;
+  color: #d41443;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,7 +233,7 @@ img {
   width: 32px;
   height: 32px;
   background-color: #fea5bb;
-  transition: background-color 250ms, color #D41443, cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms, color #d41443, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -249,7 +249,7 @@ img {
 
 .footer__soc-link:hover,
 .footer__soc-link:focus {
-  background-color: #D41443;
+  background-color: #d41443;
 }
 
 .footer__contact {
@@ -281,8 +281,8 @@ img {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
-  color: #D41443;
-  transition: color 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+  color: #d41443;
+  transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -294,7 +294,7 @@ img {
 
 .rights {
   display: block;
-  border-top: 1px solid #E1E1E1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .rights__text {
@@ -303,7 +303,7 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  color: #907E82;
+  color: #907e82;
   padding-top: 16px;
   padding-bottom: 20px;
   text-align: center;
