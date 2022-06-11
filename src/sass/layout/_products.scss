@@ -1,3 +1,4 @@
+/* section Products */
 .products-section {
   width: 100%;
 }
@@ -15,7 +16,7 @@
     padding-right: 16px;
   }
 }
-// заголовки секції Products
+/* заголовки секції Products */
 .subtitle-products {
   font-family: $font-h;
   font-style: normal;
@@ -24,12 +25,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-subtitle;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 15px;
 
-  @include mediamin(320px) {
-    font-size: 18px;
-    line-height: calc(21 / 18);
-    margin-bottom: 15px;
-  }
   @include mediamin(768px) {
     font-size: 26px;
     line-height: calc(30 / 26);
@@ -48,11 +47,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color-text-accent;
-  @include mediamin(320px) {
-    font-size: 34px;
-    line-height: calc(39 / 34);
-    margin-bottom: 148px;
-  }
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  margin-bottom: 148px;
+
   @include mediamin(768px) {
     font-size: 48px;
     line-height: calc(55 / 48);
@@ -64,7 +62,7 @@
     margin-bottom: 261px;
   }
 }
-//Картки продуктів секції Products
+/*Картки продуктів секції Products*/
 .products-list {
   display: flex;
   flex-direction: column;
@@ -82,30 +80,29 @@
   }
 }
 .product-item {
+  width: 100%;
   position: relative;
   display: flex;
   flex-grow: 1;
-  min-height: 489px;
+  margin: 0;
   border-radius: 24px;
   text-align: center;
   color: $color-text-white;
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    flex-direction: row;
-    width: 280px;
-    min-height: 489px;
+  flex-direction: column;
+  max-width: 280px;
+  min-height: 489px;
+  @include mediamax(767px) {
     &:not(:last-child) {
       margin-bottom: 140px;
     }
   }
   @include mediamin(768px) {
-    flex-direction: column;
     max-width: 224px;
     min-height: 473px;
     flex-basis: calc((100% - 32px * 3) / 3);
   }
   @include mediamin(1280px) {
-    flex-direction: column;
     max-width: 394px;
     min-height: 535px;
     flex-basis: calc((100% - 32px * 3) / 3);
@@ -120,7 +117,7 @@
     background-color: $bg-green-color;
   }
 }
-// псевдоелементи картки продуктів
+/* псевдоелементи картки продуктів*/
 .product-item::before {
   content: ' ';
   position: absolute;
@@ -222,15 +219,17 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  margin-right: 39px;
-  margin-left: 39px;
+
+  padding-right: 39px;
+  padding-left: 39px;
+
   @include mediamin(768px) {
-    margin-right: 32px;
-    margin-left: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
   @include mediamin(1280px) {
-    margin-right: 75px;
-    margin-left: 75px;
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 .product-title {
@@ -246,6 +245,7 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-top: 160px;
   @include mediamin(320px) {
     margin-top: 160px;
   }
@@ -258,7 +258,7 @@
     line-height: calc(34 / 30);
   }
 }
-//Стилізація 3 крапок в картках продукту
+/*Стилізація 3 крапок в картках продукту*/
 
 .product-title::after {
   content: '\25CF \25CF \25CF ';
@@ -288,7 +288,7 @@
     line-height: calc(28 / 16);
   }
 }
-//Стилізація кнопки
+/*Стилізація кнопки*/
 
 .product-btn {
   width: 40px;
@@ -304,7 +304,7 @@
     margin: 60px auto;
   }
 }
-//Стилізація flip ефекту картки
+/*Стилізація flip ефекту картки*/
 .product-description {
   perspective: 1000px; /*3D effect */
 }
@@ -318,11 +318,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: box-shadow 3600ms $cubic-bezier;
+  transition: rotate 2000ms $cubic-bezier;
   backface-visibility: hidden; /*невидима задня грань елемента*/
 }
 
 .back {
+  min-height: 489px;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
@@ -330,16 +331,23 @@
   background-color: $bg-accent-color;
   transform: rotateY(180deg);
   text-transform: uppercase;
-  @include mediamin(320px) {
+  @include mediamax(767px) {
+    max-width: 280px;
+    min-height: 489px;
     padding: 160px 15px 0px;
   }
   @include mediamin(768px) {
     padding: 118px 15px 0px;
+    min-height: 473px;
+    flex-basis: calc((100% - 32px * 3) / 3);
   }
   @include mediamin(1280px) {
     padding: 165px 15px 0px;
     font-size: 30px;
     line-height: calc(34 / 30);
+
+    min-height: 535px;
+    flex-basis: calc((100% - 32px * 3) / 3);
   }
 }
 .back2 {
@@ -354,6 +362,4 @@
 .back-visibility {
   transform: rotateY(360deg);
 }
-// .btn-back {
-//   //margin-bottom: 40px;
-// }
+/* end section Products */
