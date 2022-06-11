@@ -1,25 +1,38 @@
 .hero {
     padding-top: 192px;
     padding-bottom: 158px;
-   background-color: $bg-hero;
-.container {
-        flex-direction: column;
-    }
-
-    @include mediamin(768px) {
-        padding-top: 102px;
-        padding-bottom: 190px;
-    }
-
-    @include mediamin(1280px) {
-        padding-top: 146px;
-        padding-bottom: 316px;
+    background-color: $bg-hero;
+    .container {
+            flex-direction: column;
+    
+    
+            @include mediamin(768px) {
+                padding-top: 102px;
+                padding-bottom: 190px;
+            }
+    
+            @include mediamin(1280px) {
+                padding-top: 146px;
+                padding-bottom: 316px;
+            }
         }
+
 }
+
+// .hero__img {
+//     position: absolute;
+//     background-image: url(../images/header/header-elipse-tablet-1x-min.png);
+//     background-repeat: no-repeat;
+//     top: 83px;
+//         left: 36px;
+// }
+
+
 
 
 
 .hero__title {
+    z-index: 2;
     max-width: 218px;
     font-weight: 400;
     font-size: 26px;
@@ -50,11 +63,10 @@
 }
 
 .anchor__link {
-font-family: 'DM Sans';
-    font-style: normal;
+    font-family: 'DM Sans';
     font-weight: 400;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     display: flex;
     align-items: center;
     text-align: center;

@@ -139,8 +139,6 @@ stroke: $color-text-accent;
     margin-left: auto;
     background-color: $bg-mobile-menu;
     padding: 0;
-    
-    // background-color: var(--primary-bg-color);
     cursor: pointer;
     // transition: fill 250ms var(--timing-function);
 
@@ -203,8 +201,4 @@ stroke: $color-text-accent;
     &--current {
         color: $color-text-accent;
     }
-}
-
-.no-scroll {
-    overflow: hidden;
 }
