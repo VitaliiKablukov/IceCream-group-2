@@ -1,30 +1,36 @@
+.footer {
+    @media screen and (min-width:1280px) {
+        padding-top: 60px;
+    }}
+
+.footer__container {
+    @media screen and (min-width:768px) {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
 .footer__wrapper {
     @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     }
 }
 
 .footer__text {
     width: 234px;
-    margin-top: 48px;
     margin-bottom: 40px;
     @media screen and (min-width:768px) {
     width: 370px;
-    margin-top: 40px;
     margin-bottom: 40px;
     }
     @media screen and (min-width:1280px) {
     width: 478px;
-    margin-top: 48px;
     margin-bottom: 31px;
-    
     }
 }
-
-
 
 .footer__text-one {
 font-family: 'Titan One';
@@ -33,16 +39,17 @@ font-family: 'Titan One';
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
+    letter-spacing: 0;
 
     color: $color-subtitle;
     margin-bottom: 16px;
     @media screen and (min-width:768px) {
         font-size: 26px;
         line-height: 1.15;
-        letter-spacing: 0.04em;
+        margin-bottom: 12px;
         
     }
-    @media screen and (min-width:768px) {
+    @media screen and (min-width:1280px) {
         font-size: 30px;
         line-height: 1.14;
         }
@@ -54,7 +61,6 @@ font-family: 'Titan One';
         font-weight: 400;
         font-size: 34px;
         line-height: 1.15;
-        letter-spacing: 0.04em;
         text-transform: uppercase;
         color: $color-btn-light;
 
@@ -117,6 +123,9 @@ font-family: 'Titan One';
     display: flex;
     justify-content: right;
     margin-bottom: 40px;
+    @media screen and (min-width:1280px) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer__contact-text {
@@ -125,12 +134,18 @@ font-family: 'Titan One';
         font-weight: 700;
         font-size: 12px;
         line-height: 1.83;
+        letter-spacing: 0;
         color: $color-text-black;
         text-align: right;
         @media screen and (min-width:768px) {
             font-size: 14px;
             line-height: 1.86;
-}}
+        }
+            @media screen and (min-width:1280px) {
+            font-size: 16px;
+            letter-spacing: 0.02em;
+            }
+}
 
 .footer__contact-tel {
     font-family: 'DM Sans';
@@ -163,7 +178,7 @@ border-top: 1px solid $color-line;
         padding-top: 16px;
         padding-bottom: 20px;
         text-align: center;
-@media screen and (max-width:767px) {
+@media screen and (max-width:767.98px) {
         margin-left: auto;
         margin-right: auto;
         width: 160px;
@@ -174,9 +189,6 @@ border-top: 1px solid $color-line;
     letter-spacing: 0.02em;
     padding-top: 8px;
     padding-bottom: 8px;
-        
-}
-@media screen and (min-width:1280px) {
     padding-top: 37px;
     padding-bottom: 8px;
 }

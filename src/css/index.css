@@ -119,25 +119,36 @@ img {
   border: none;
 }
 
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .footer__text {
   width: 234px;
-  margin-top: 48px;
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .footer__text {
     width: 370px;
-    margin-top: 40px;
     margin-bottom: 40px;
   }
 }
@@ -145,7 +156,6 @@ img {
 @media screen and (min-width: 1280px) {
   .footer__text {
     width: 478px;
-    margin-top: 48px;
     margin-bottom: 31px;
   }
 }
@@ -157,6 +167,7 @@ img {
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
+  letter-spacing: 0;
   color: #ffa5ba;
   margin-bottom: 16px;
 }
@@ -165,11 +176,11 @@ img {
   .footer__text-one {
     font-size: 26px;
     line-height: 1.15;
-    letter-spacing: 0.04em;
+    margin-bottom: 12px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .footer__text-one {
     font-size: 30px;
     line-height: 1.14;
@@ -182,7 +193,6 @@ img {
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
 }
@@ -258,12 +268,19 @@ img {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 1280px) {
+  .footer__contact {
+    margin-bottom: 60px;
+  }
+}
+
 .footer__contact-text {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
+  letter-spacing: 0;
   color: #000000;
   text-align: right;
 }
@@ -272,6 +289,13 @@ img {
   .footer__contact-text {
     font-size: 14px;
     line-height: 1.86;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer__contact-text {
+    font-size: 16px;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -309,7 +333,7 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .rights__text {
     margin-left: auto;
     margin-right: auto;
@@ -324,11 +348,6 @@ img {
     letter-spacing: 0.02em;
     padding-top: 8px;
     padding-bottom: 8px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .rights__text {
     padding-top: 37px;
     padding-bottom: 8px;
   }
