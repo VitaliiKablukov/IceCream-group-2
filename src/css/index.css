@@ -394,11 +394,15 @@ img {
   border-radius: 15%;
 }
 
+.contacts-list {
+  margin-bottom: 32px;
+}
+
 @media screen and (min-width: 768px) {
   .contacts-list {
     display: flex;
-    margin: -16px;
-    margin-bottom: 80px;
+    margin: 0 -16px;
+    margin-bottom: 40px;
   }
 }
 
@@ -415,24 +419,27 @@ img {
   border-radius: 24px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .contacts-list__item {
     margin-bottom: 20px;
     width: 100%;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .contacts-list__item {
     min-width: 224px;
-    flex-basis: calc((100% - 96px) / 3);
-    margin: 16px;
+    flex-basis: calc((100% / 3) - 32px);
+    margin: 0 16px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .contacts-list__item {
-    min-width: 396px;
+    padding: 40px 40px;
   }
 }
 
@@ -451,12 +458,23 @@ img {
     padding: 0 15px;
     font-weight: 500;
     font-size: 16px;
+    margin-bottom: 32px;
   }
+}
+
+.contacts-block__item {
+  line-height: 1.86;
 }
 
 .contacts-block__item:nth-child(2) {
   padding-bottom: 24px;
   border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-block__item:nth-child(2) {
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-block__item:nth-child(3) {
@@ -465,8 +483,21 @@ img {
   border-bottom: 1px solid #e1e1e1;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-block__item:nth-child(3) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
+}
+
 .contacts-block__item:last-child {
   padding-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-block__item:last-child {
+    padding-top: 32px;
+  }
 }
 
 .contacts-block__item--beige {
@@ -481,11 +512,18 @@ img {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+  letter-spacing: 0;
   color: #000000;
 }
 
 .contacts-block__title--marg {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-block__title--marg {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -496,15 +534,17 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contacts-block__title {
+    font-size: 16px;
+  }
+}
+
 .contacts-block__text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.86;
   color: #907e82;
-}
-
-.contacts-block__text--pink {
-  color: #ffa5ba;
 }
 
 .contacts-block__text--gray {
@@ -519,10 +559,26 @@ img {
   }
 }
 
+@media screen and (min-width: 1280px) {
+  .contacts-block__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    width: 100%;
+  }
+}
+
+.contacts-block__text--pink {
+  color: #ffa5ba;
+  line-height: 1.86;
+  letter-spacing: 0;
+}
+
 .contacts-block__link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+  letter-spacing: 0;
   color: currentColor;
 }
 
@@ -539,13 +595,33 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .contacts-block__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .txt-wrapper {
-    width: 243px;
+    width: 250px;
   }
 }
 
 .section--bg {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .container--bg {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container--bg {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .container--bg::before {
@@ -575,7 +651,7 @@ img {
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.31;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -586,6 +662,8 @@ img {
 @media screen and (min-width: 768px) {
   .contacts__btn {
     margin: 0;
+    min-width: 192px;
+    padding-right: 32px;
   }
 }
 
@@ -595,7 +673,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .contacts__btn--light {
     margin-top: 10px;
   }
@@ -620,6 +698,13 @@ img {
   right: 5px;
   top: 18px;
   stroke: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    right: 24px;
+    top: 17px;
+  }
 }
 
 .contacts__icon--dark {
@@ -656,7 +741,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.9px) {
   .modal-franch {
     width: 96%;
   }

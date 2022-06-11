@@ -1,8 +1,10 @@
 .contacts-list {
+  margin-bottom: 32px;
+
   @media screen and (min-width: 768px) {
     display: flex;
-    margin: -16px;
-    margin-bottom: 80px;
+    margin: 0 -16px;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
@@ -15,19 +17,23 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.9px) {
     margin-bottom: 20px;
     width: 100%;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 
   @media screen and (min-width: 768px) {
     min-width: 224px;
-    flex-basis: calc((100% - 96px) / 3);
-    margin: 16px;
+    // flex-basis: calc((100% - 96px) / 3);
+    flex-basis: calc((100% / 3) - 32px);
+    margin: 0 16px;
   }
 
   @media screen and (min-width: 1280px) {
-    min-width: 396px;
+    padding: 40px 40px;
   }
 }
 
@@ -44,22 +50,35 @@
     padding: 0 15px;
     font-weight: 500;
     font-size: 16px;
+    margin-bottom: 32px;
   }
 }
-
+.contacts-block__item {
+  line-height: 1.86;
+}
 .contacts-block__item:nth-child(2) {
   padding-bottom: 24px;
   border-bottom: 1px solid $color-line;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-block__item:nth-child(3) {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid $color-line;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
 }
 
 .contacts-block__item:last-child {
   padding-top: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
 }
 
 .contacts-block__item--beige {
@@ -74,9 +93,14 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
+  letter-spacing: 0;
   color: $color-text-black;
+
   &--marg {
     margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -84,17 +108,16 @@
     font-size: 14px;
     line-height: 1.86;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .contacts-block__text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.86;
   color: $color-text-general;
-
-  &--pink {
-    color: $color-subtitle;
-  }
 
   &--gray {
     color: $color-text-general;
@@ -105,12 +128,24 @@
     font-size: 14px;
     line-height: 1.66;
   }
+  @media screen and (min-width: 1280px) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    width: 100%;
+  }
+  &--pink {
+    color: $color-subtitle;
+    line-height: 1.86;
+    letter-spacing: 0;
+  }
 }
 
 .contacts-block__link {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
+  letter-spacing: 0;
   color: currentColor;
   &:hover,
   &:focus {
@@ -121,16 +156,30 @@
     font-size: 14px;
     line-height: 1.83;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
 }
 
 .txt-wrapper {
   @media screen and (min-width: 1280px) {
-    width: 243px;
+    width: 250px;
   }
 }
 
 .section--bg {
   position: relative;
+}
+.container--bg {
+  @media screen and (min-width: 768px) {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .container--bg::before {
@@ -153,12 +202,13 @@
   position: relative;
   min-width: 162px;
   min-height: 44px;
+
   background-color: $bg-btn-dark;
   color: $color-text-white;
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.31;
   transition: background-color 250ms $cubic-bezier;
   &:hover,
   &:focus {
@@ -166,9 +216,11 @@
   }
   @media screen and (min-width: 768px) {
     margin: 0;
+    min-width: 192px;
+    padding-right: 32px;
   }
   &--light {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767.9px) {
       margin-top: 10px;
     }
     @media screen and (min-width: 768px) {
@@ -193,6 +245,10 @@
   right: 5px;
   top: 18px;
   stroke: $color-text-white;
+  @media screen and (min-width: 768px) {
+    right: 24px;
+    top: 17px;
+  }
   &--dark {
     position: absolute;
     right: 19px;
@@ -228,7 +284,7 @@
   background-color: $bg-mobile-menu;
   border-radius: 22px;
   transition: transform 250ms $cubic-bezier;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.9px) {
     width: 96%;
   }
 }
