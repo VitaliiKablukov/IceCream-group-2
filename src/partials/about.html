@@ -1,0 +1,73 @@
+<section class="about section" id="about">
+  <div class="container container-about">
+    <p class="about-text-top">tradition and love</p>
+    <h2 class="about-title">how it’s made?</h2>
+    <div class="about-wrap1">
+      <picture>
+        <source
+          srcset="
+            ./images/about/about-cow-1x-min.png,
+            ./images/about/about-cow-2x-min.png
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/about/about-cow-tab-1x-min.png,
+            ./images/about/about-cow-tab-2x-min.png
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/about/about-cow-mob-1x-min.png,
+            ./images/about/about-cow-mob-2x-min.png
+          "
+          media="(min-width:320px)"
+        />
+        <img
+          src="./images/about/about-cow-tab-1x-min.png"
+          class="about-img"
+          alt=""
+        />
+      </picture>
+      <div class="about-wrap">
+        <p class="about-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about-text-bottom first">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about-text-bottom">Aliquam erat volutpat. Aenean accumsan.</p>
+        <button data-open-modal type="button" class="about-button">
+          Read more
+          <svg class="about-icon" width="9" height="16">
+            <use href="./images/symbol-defs.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+        <div class="bb">
+          <p class="modal-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+            quisquam nostrum repudiandae architecto provident ipsum suscipit
+            aspernatur expedita unde est, quasi, ratione necessitatibus sint!
+            Maxime iste sit explicabo accusamus amet.
+          </p>
+          <button type="button" data-close-modal>
+            <svg class="icon-close" width="30" height="30">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
