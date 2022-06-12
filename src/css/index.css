@@ -1353,6 +1353,10 @@ textarea:focus {
   width: 100%;
 }
 
+.footer {
+  background-color: #fff5f6;
+}
+
 @media screen and (min-width: 1280px) {
   .footer {
     padding-top: 60px;
@@ -1370,7 +1374,6 @@ textarea:focus {
   .footer__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -1470,14 +1473,9 @@ textarea:focus {
 }
 
 .footer__soc-link {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 32px;
   height: 32px;
-  background-color: #fea5bb;
-  transition: background-color 250ms, color #d41443, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1488,13 +1486,21 @@ textarea:focus {
 }
 
 .footer__soc-icon {
-  fill: #ffffff;
+  fill: #fea5bb;
   stroke: #ffffff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__soc-link:hover,
-.footer__soc-link:focus {
-  background-color: #d41443;
+@media screen and (min-width: 768px) {
+  .footer__soc-icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer__soc-link:hover .footer__soc-icon,
+.footer__soc-link:focus .footer__soc-icon {
+  fill: #d41443;
 }
 
 .footer__contact {
