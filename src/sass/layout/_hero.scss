@@ -17,10 +17,29 @@
     }
 }
 
+.hero__main-content {
+   position: absolute;
+}
+
+
+.hero__ellipse {
+    position: absolute;
+    top: 83px;
+    left: 36px;
+
+}
+
+.hero__icecream {
+    position: absolute;
+    top: 92px;
+    left: 117px;
+}
+
+
 .hero__title {
     
     max-width: 218px;
-    @include font (400, 26px, null, null)
+    @include font (400, 26px, null, null);
     text-transform: uppercase;
     color: $color-text-white;
 
@@ -74,3 +93,4 @@
             @include font (null, 14px, null, null);
         }
 }
+

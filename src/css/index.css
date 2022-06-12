@@ -123,6 +123,7 @@ img {
 .header {
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 
 .header .container {
@@ -363,6 +364,22 @@ img {
 
 .hero .container {
   flex-direction: column;
+}
+
+.hero__main-content {
+  position: absolute;
+}
+
+.hero__ellipse {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+}
+
+.hero__icecream {
+  position: absolute;
+  top: 92px;
+  left: 117px;
 }
 
 .hero__title {
