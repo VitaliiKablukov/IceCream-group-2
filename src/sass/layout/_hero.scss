@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     padding-top: 192px;
     padding-bottom: 158px;
     background-color: $bg-hero;
@@ -19,6 +20,8 @@
 
 .hero__main-content {
    position: absolute;
+   left: 20px;
+   top: 194px;
 }
 
 
