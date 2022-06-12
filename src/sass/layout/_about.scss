@@ -1,6 +1,6 @@
 .about {
-  background-color: $bg-section;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
+    background-color: $bg-section;
     background-image: url(../images/about/about-bg-mob-1x-min.png);
     background-repeat: no-repeat;
     background-position-y: 574px;
@@ -13,12 +13,14 @@
     }
   }
   @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: linear-gradient(#ffffff 20px, $bg-section 20px, $bg-section);
   }
   @media screen and (min-width: 1280px) {
+    background-color: $bg-section;
     padding-top: 60px;
-    padding-bottom: 99px;
+    padding-bottom: 60px;
     background-image: url(../images/about/about-bg-1x-min.png);
     background-repeat: no-repeat;
     background-position-y: 255px;
@@ -31,7 +33,8 @@
     }
   }
 }
-.container {
+
+.container-about {
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 34px;
@@ -51,7 +54,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $color-subtitle;
-
+  letter-spacing: 0em;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -59,9 +62,9 @@
     margin-bottom: 16px;
   }
   @media screen and (min-width: 1280px) {
+    letter-spacing: 0.04em;
     font-size: 30px;
     line-height: 1.13;
-    margin-bottom: 16px;
   }
 }
 
@@ -80,20 +83,15 @@
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
+    letter-spacing: 0.06em;
     font-size: 58px;
     line-height: 1.14;
     margin-bottom: 60px;
   }
 }
 .about-img {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 40px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 32px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-right: 139px;
   }
 }
 .about-text {
@@ -101,6 +99,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
+  letter-spacing: 0em;
   color: $color-text-black;
   margin-bottom: 40px;
   max-width: 220px;
@@ -110,6 +109,7 @@
     max-width: 334px;
   }
   @media screen and (min-width: 1280px) {
+    letter-spacing: 0.04em;
     font-size: 16px;
     line-height: 1.75;
     max-width: 463px;
@@ -121,6 +121,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
+  letter-spacing: 0em;
   color: $color-text-general;
   margin-bottom: 20px;
   max-width: 220px;
@@ -129,18 +130,26 @@
     line-height: 1.79;
     max-width: 334px;
     margin-bottom: 40px;
+    letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
     line-height: 1.92;
     max-width: 463px;
   }
+  &.first {
+    @media screen and (min-width: 768px) and (max-width: 1279.89px) {
+      margin-bottom: 20px;
+    }
+  }
 }
+
 .about-button {
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
+  letter-spacing: 0em;
   align-items: center;
   text-align: center;
   color: $color-text-accent;
@@ -168,6 +177,11 @@
 .about-wrap1 {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -204,7 +218,7 @@
       transform: translate(-50%, -50%) scale(0.6);
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     background-image: url(../images/about/about-bg-mob-1x-min.png);
     background-repeat: no-repeat;
     background-position-y: 386px;
