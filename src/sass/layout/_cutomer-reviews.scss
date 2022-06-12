@@ -6,46 +6,19 @@
 }
 
 .slide__img {
-  margin-bottom: 16px;
-}
-
-// .one-time.slick-initialized.slick-slider {
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   margin: 0 auto;
-//   max-width: 320px;
-//   @media screen and (min-width: 768px) {
-//     padding-left: 32px;
-//     padding-right: 32px;
-//     max-width: 768px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     padding-left: 16px;
-//     padding-right: 16px;
-//     max-width: 1280px;
-//   }
-// }
-
-.slide-review__gradientbox {
-  display: block;
-  //   padding: 43px 50px 17px 50px;
-  //   background-color: tomato;
-  text-align: center;
+  margin-bottom: 32px;
   @media screen and (min-width: 768px) {
-    // padding: 6px 23px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 822px;
-    // padding: 32px 105px;
+    margin-bottom: 16px;
   }
 }
 
 .gradient-wrapper {
   padding: 43px 50px 17px 50px;
-  background-color: tomato;
+  background-color: $bg-quote;
   text-align: center;
   @media screen and (min-width: 768px) {
-    padding: 6px 23px;
+    max-width: 620px;
+    padding: 23px 6px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1034px;
@@ -53,34 +26,89 @@
   }
 }
 
+.slide-review__gradientbox {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding: 13px 0;
+  text-align: center;
+  max-height: 260px;
+  overflow: auto; //------------------ якщо убрати, то будуть прігати відгуки при слайді
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  @media screen and (min-width: 768px) {
+    max-height: 108px;
+    padding: 20px 45px 0 45px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+    max-height: 75px;
+    padding: 20px 35px 0 35px;
+  }
+}
+
+.slide-review__gradientbox::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slide-review__text::before {
+  content: '';
+  display: block;
+  position: absolute; //можно поставити також sticky.
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(/src/images/slider/quotes.svg);
+  z-index: -1;
+}
+
 .slide-review__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
-  margin-bottom: 16px;
   color: #000000;
-  margin: auto;
   letter-spacing: 0.04em;
-
+  overflow: scroll;
   display: inline;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 100% 1px;
-  background-image: repeating-linear-gradient(to bottom, #e1e1e1, #e1e1e1);
-  background-position: center bottom 1px;
-  text-align: center;
+  background-image: repeating-linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-position: 0 100%;
 }
 
-// .slide-review__text::before {
-
-// }
-
 .slide-review__name {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.8;
   text-align: center;
-
   color: #000000;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+// троеточие, не слайд
+
+.slide-review__name::before {
+  content: '. . .';
+  display: flex;
+  justify-content: center;
+  color: $bg-btn-dark-hover;
+}
+
+// ------------домик
+
+.slick-dots .slick-active {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/slider/red-house.svg);
+}
+
+.slick-dots li.slick-active button:before {
+  display: none;
 }

@@ -124,27 +124,23 @@ img {
 }
 
 .slide__img {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
-
-.slide-review__gradientbox {
-  display: block;
-  text-align: center;
-}
-@media screen and (min-width: 1280px) {
-  .slide-review__gradientbox {
-    max-width: 822px;
+@media screen and (min-width: 768px) {
+  .slide__img {
+    margin-bottom: 16px;
   }
 }
 
 .gradient-wrapper {
   padding: 43px 50px 17px 50px;
-  background-color: tomato;
+  background-color: #fafafa;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
   .gradient-wrapper {
-    padding: 6px 23px;
+    max-width: 620px;
+    padding: 23px 6px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -154,28 +150,91 @@ img {
   }
 }
 
+.slide-review__gradientbox {
+  position: relative;
+  z-index: 0;
+  display: block;
+  padding: 13px 0;
+  text-align: center;
+  max-height: 260px;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media screen and (min-width: 768px) {
+  .slide-review__gradientbox {
+    max-height: 108px;
+    padding: 20px 45px 0 45px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slide-review__gradientbox {
+    max-width: 822px;
+    max-height: 75px;
+    padding: 20px 35px 0 35px;
+  }
+}
+
+.slide-review__gradientbox::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.slide-review__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(/src/images/slider/quotes.svg);
+  z-index: -1;
+}
+
 .slide-review__text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.8;
-  margin-bottom: 16px;
   color: #000000;
-  margin: auto;
   letter-spacing: 0.04em;
+  overflow: scroll;
   display: inline;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 100% 1px;
-  background-image: repeating-linear-gradient(to bottom, #e1e1e1, #e1e1e1);
-  background-position: center bottom 1px;
-  text-align: center;
+  background-image: repeating-linear-gradient(to right, #e1e1e1, #e1e1e1);
+  background-position: 0 100%;
 }
 
 .slide-review__name {
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.8;
   text-align: center;
   color: #000000;
+}
+@media screen and (min-width: 768px) {
+  .slide-review__name {
+    margin-bottom: 32px;
+  }
+}
+
+.slide-review__name::before {
+  content: ". . .";
+  display: flex;
+  justify-content: center;
+  color: #c7133e;
+}
+
+.slick-dots .slick-active {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../images/slider/red-house.svg);
+}
+
+.slick-dots li.slick-active button:before {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
