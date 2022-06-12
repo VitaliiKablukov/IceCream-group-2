@@ -1,4 +1,5 @@
 .footer {
+  background-color: $bg-section;
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
   }
@@ -15,7 +16,6 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: space-between;
   }
 }
@@ -95,29 +95,29 @@
 }
 
 .footer__soc-link {
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 32px;
   height: 32px;
-  background-color: $bg-social;
-  transition: background-color $transition-time, color $bg-btn-dark,
-    $cubic-bezier;
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
   }
 }
 
 .footer__soc-icon {
-  fill: $color-btn-dark;
+  fill: $bg-social;
   stroke: $color-btn-dark;
+  transition: fill $transition-time $cubic-bezier;
+  @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+  
 }
 
-.footer__soc-link:hover,
-.footer__soc-link:focus {
-  background-color: $bg-btn-dark;
+.footer__soc-link:hover .footer__soc-icon,
+.footer__soc-link:focus .footer__soc-icon{
+  fill: $bg-btn-dark;
 }
 
 .footer__contact {
