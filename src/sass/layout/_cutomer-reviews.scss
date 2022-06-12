@@ -8,12 +8,15 @@
 .slide__img {
   margin-bottom: 32px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
     margin-bottom: 16px;
   }
 }
 
 .gradient-wrapper {
-  padding: 43px 50px 17px 50px;
+  padding: 0 50px 17px 50px;
   background-color: $bg-quote;
   text-align: center;
   @media screen and (min-width: 768px) {
@@ -28,15 +31,16 @@
 
 .slide-review__gradientbox {
   position: relative;
-  z-index: 0;
+  z-index: 1;
   display: block;
   padding: 13px 0;
   text-align: center;
   max-height: 260px;
-  overflow: auto; //------------------ якщо убрати, то будуть прігати відгуки при слайді
+  overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
   @media screen and (min-width: 768px) {
+    max-width: 514px;
     max-height: 108px;
     padding: 20px 45px 0 45px;
   }
@@ -55,7 +59,7 @@
 .slide-review__text::before {
   content: '';
   display: block;
-  position: absolute; //можно поставити також sticky.
+  position: absolute;
   top: 0;
   left: 0;
   width: 54px;
@@ -67,28 +71,40 @@
 
 .slide-review__text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #000000;
-  letter-spacing: 0.04em;
+  font-size: 12px;
+  line-height: 2.55;
+  color: $color-text-black;
   overflow: scroll;
   display: inline;
   background-repeat: repeat-x;
   background-size: 100% 1px;
   background-image: repeating-linear-gradient(to right, #e1e1e1, #e1e1e1);
   background-position: 0 100%;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .slide-review__name {
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.86;
   text-align: center;
-  color: #000000;
+  color: $color-text-black;
   @media screen and (min-width: 768px) {
     margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 20px;
   }
 }
 
