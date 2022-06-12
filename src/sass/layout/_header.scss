@@ -1,0 +1,219 @@
+.header {
+    position: absolute;
+    width: 100%;
+
+    .container {
+        display: flex;
+        padding-top: 8px;
+
+        @include mediamin(768px) {
+            padding-top: 32px;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Titan One';
+    
+    @include font (null, 26px, 0.91, 0.01em);
+    text-transform: uppercase;
+    color: $color-text-accent;
+}
+
+.logo__icon {
+    margin-right: 20px;
+}
+
+
+.navigation {
+    @include mediamin(1280px) {
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+
+}
+
+.navigation__list {
+    display: none;
+
+    @include mediamin(1280px) {
+        display: flex;
+        margin-left: 175px;
+    }
+}
+
+.navigation__item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.navigation__link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: $color-text-white;
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $color-text-accent;
+    }
+}
+
+.navigation__link--current {
+    color: $color-text-accent;
+}
+
+.header__btn {
+    display: none;
+
+    @include mediamin(768px) {
+        display: flex;
+        margin-right: 0;
+        margin-left: 32px;
+        width: 160px;
+        height: 44px;
+        background-color: $bg-btn-light;
+        border-radius: 22px;
+        font-weight: 700;
+        transition: color 250ms $cubic-bezier;
+        transition: background-color 250ms $cubic-bezier;
+    }
+
+    @include mediamin(1280px) {
+        margin-left: auto;
+    }
+}
+
+.header__btn:hover,
+.header__btn:focus {
+    color: $color-btn-dark;
+    background-color: $bg-btn-dark-hover;
+}
+
+.btn__icon--arrow {
+    margin-left: 12px;
+    fill: currentColor;
+}
+
+
+.mob-menu__btn--open {
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-left: auto;
+    background-color: transparent;
+    cursor: pointer;
+    fill: $bg-btn-dark;
+
+
+
+
+
+    @include mediamin(1280px) {
+        display: none;
+    }
+
+}
+
+.mob-btn__icon--open {
+    stroke: $color-text-accent;
+}
+
+.mob-menu {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: $bg-mobile-menu;
+    transition: transform 700ms $cubic-bezier;
+    transform: translateX(0);
+
+    .container {
+        flex-direction: column;
+        height: 100%;
+        padding: 60px 20px 185px 20px;
+    }
+
+    @include mediamin(1280px) {
+        display: none;
+    }
+}
+
+
+.header .mob-menu.is-hidden {
+    transform: translateX(200%);
+}
+
+
+
+.mob-menu__btn--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    border: none;
+    margin-left: auto;
+    background-color: $bg-mobile-menu;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mob-btn__icon--close {
+    stroke: $color-text-white;
+    transition: stroke 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        stroke: $color-text-accent;
+    }
+}
+
+.mob-menu__btn {
+    display: block;
+    width: 209px;
+    min-height: 44px;
+    margin-bottom: 20px;
+    background-color: $bg-btn-light;
+    border-radius: 22px;
+    font-weight: 700;
+
+    @include mediamin(768px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 186px;
+    }
+
+    transition: color 250ms $cubic-bezier;
+    transition: background-color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $color-btn-dark;
+        background-color: $bg-btn-dark-hover;
+    }
+}
+
+.mob-menu__link {
+    @include font (700, 14px, 1.29, null);
+    display: flex;
+    height: 42px;
+    align-items: center;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
+    color: $color-text-white;
+    transition: color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: $color-text-accent;
+    }
+
+    &--current {
+        color: $color-text-accent;
+    }
+}
