@@ -118,7 +118,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    @include font (null, 8px, 1.25, null);
+    @include font (null, 8px, 1.25, 0);
     color: $bg-btn-light;
     background-color: $color-btn-light;
     border-radius: 20px;
