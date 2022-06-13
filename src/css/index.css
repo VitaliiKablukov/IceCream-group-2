@@ -764,6 +764,8 @@ img {
   border-radius: 24px;
   text-align: center;
   color: #ffffff;
+  perspective: 1000px;
+  /*3D effect */
   flex-direction: column;
   max-width: 280px;
   min-height: 489px;
@@ -789,18 +791,6 @@ img {
     min-height: 535px;
     flex-basis: calc((100% - 32px * 3) / 3);
   }
-}
-
-.product-item:nth-child(1) {
-  background-color: #ffb8ca;
-}
-
-.product-item:nth-child(2) {
-  background-color: #f0d1a5;
-}
-
-.product-item:nth-child(3) {
-  background-color: #c2e297;
 }
 
 /* псевдоелементи картки продуктів*/
@@ -942,6 +932,9 @@ img {
   flex-grow: 1;
   padding-right: 39px;
   padding-left: 39px;
+  backface-visibility: hidden;
+  /*невидима задня грань елемента*/
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -1040,9 +1033,22 @@ img {
 }
 
 /*Стилізація flip ефекту картки*/
-.product-description {
-  perspective: 1000px;
-  /*3D effect */
+.front1,
+.front2,
+.front3 {
+  border-radius: 24px;
+}
+
+.front1 {
+  background-color: #ffb8ca;
+}
+
+.front2 {
+  background-color: #f0d1a5;
+}
+
+.front3 {
+  background-color: #c2e297;
 }
 
 .front,
@@ -1053,11 +1059,13 @@ img {
   left: 0;
   top: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: rotate 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  backface-visibility: hidden;
-  /*невидима задня грань елемента*/
+  transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.front {
+  transform: rotateY(180deg);
+  justify-content: center;
 }
 
 .back {
@@ -1067,6 +1075,8 @@ img {
   justify-content: space-between;
   border-radius: 24px;
   background-color: #ffb8ca;
+  backface-visibility: hidden;
+  /*невидима задня грань елемента*/
   transform: rotateY(180deg);
 }
 
@@ -1102,10 +1112,6 @@ img {
 
 .back3 {
   background-color: #c2e297;
-}
-
-.front {
-  transform: rotateY(180deg);
 }
 
 .back-visibility {
@@ -1172,7 +1178,7 @@ img {
 @media screen and (min-width: 1280px) {
   .container-about {
     padding-left: 16px;
-    padding-right: 161px;
+    padding-right: 16px;
     max-width: 1280px;
   }
 }

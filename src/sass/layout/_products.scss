@@ -71,7 +71,7 @@
   border-radius: 24px;
   text-align: center;
   color: $color-text-white;
-
+  perspective: 1000px; /*3D effect */
   flex-direction: column;
   max-width: 280px;
   min-height: 489px;
@@ -89,15 +89,6 @@
     max-width: 394px;
     min-height: 535px;
     flex-basis: calc((100% - 32px * 3) / 3);
-  }
-  &:nth-child(1) {
-    background-color: $bg-accent-color;
-  }
-  &:nth-child(2) {
-    background-color: $bg-beige-color;
-  }
-  &:nth-child(3) {
-    background-color: $bg-green-color;
   }
 }
 /* псевдоелементи картки продуктів*/
@@ -202,10 +193,10 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-
   padding-right: 39px;
   padding-left: 39px;
-
+  backface-visibility: hidden; /*невидима задня грань елемента*/
+  transition: 1s $cubic-bezier;
   @include mediamin(768px) {
     padding-right: 32px;
     padding-left: 32px;
@@ -215,6 +206,7 @@
     padding-left: 75px;
   }
 }
+
 .product-title {
   position: relative;
   display: inline-block;
@@ -283,8 +275,19 @@
   }
 }
 /*Стилізація flip ефекту картки*/
-.product-description {
-  perspective: 1000px; /*3D effect */
+.front1,
+.front2,
+.front3 {
+  border-radius: 24px;
+}
+.front1 {
+  background-color: $bg-accent-color;
+}
+.front2 {
+  background-color: $bg-beige-color;
+}
+.front3 {
+  background-color: $bg-green-color;
 }
 .front,
 .back {
@@ -294,12 +297,13 @@
   left: 0;
   top: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: rotate 2000ms $cubic-bezier;
-  backface-visibility: hidden; /*невидима задня грань елемента*/
+  transition: 1s $cubic-bezier;
 }
-
+.front {
+  transform: rotateY(180deg);
+  justify-content: center;
+}
 .back {
   min-height: 489px;
   flex-direction: column;
@@ -307,6 +311,7 @@
   justify-content: space-between;
   border-radius: 24px;
   background-color: $bg-accent-color;
+  backface-visibility: hidden; /*невидима задня грань елемента*/
   transform: rotateY(180deg);
 
   @include mediamax(767.98px) {
@@ -334,9 +339,7 @@
 .back3 {
   background-color: $bg-green-color;
 }
-.front {
-  transform: rotateY(180deg);
-}
+
 .back-visibility {
   transform: rotateY(360deg);
 }
