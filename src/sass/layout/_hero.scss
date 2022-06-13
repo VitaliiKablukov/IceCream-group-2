@@ -162,7 +162,7 @@
         width: 124px;
         left: 184px;
         top: 287px;
-        @include font (null, 8px, 1.5, null);
+        @include font (null, 8px, 1.5, 0);
         color: $color-text-white;
     }
     
@@ -170,7 +170,7 @@
         width: 200px;
         left: 229px;
         top: 456px;
-        @include font (null, 14px, 1.4, null);
+        @include font (null, 14px, 1.4, 0);
     }
 }
 
