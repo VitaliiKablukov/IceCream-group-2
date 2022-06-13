@@ -1,22 +1,25 @@
-.contacts{
-  @media screen and (max-width:767.98px) {
+.contacts {
+  @media screen and (max-width: 767.98px) {
     padding-top: 8px;
-    
   }
-  background-image: linear-gradient(to bottom, #ffffff 25%, $bg-section 25% 100%);
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 25%,
+    $bg-section 25% 100%
+  );
 }
-.contacts__container{
-  @media screen and (min-width:768px) {
-  padding: 0 18px;
+.contacts__container {
+  @media screen and (min-width: 768px) {
+    padding: 0 18px;
   }
-    @media screen and (min-width:1280px) {
-      padding: 0 16px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding: 0 16px;
+  }
 }
 
 .contacts__list {
   margin-bottom: 32px;
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
     margin-bottom: 40px;
@@ -25,31 +28,31 @@
     margin-bottom: 60px;
   }
 }
-.contacts__item{
+.contacts__item {
   background-color: #fff;
   border-radius: 24px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   padding: 40px 32px;
-  &:last-child{
-    margin-bottom:0 ;
+  &:last-child {
+    margin-bottom: 0;
   }
   @media screen and(max-width:767.98px) {
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
+    &:not(:last-child) {
+      margin-bottom: 20px;
     }
+  }
   @media screen and(min-width:768px) {
-    width: calc((100% - 64px)/3);
-    &:not(:last-child){
+    width: calc((100% - 64px) / 3);
+    &:not(:last-child) {
       margin-right: 32px;
     }
   }
-    @media screen and (min-width: 1280px) {
-        padding: 40px 40px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding: 40px 40px;
+  }
 }
 
-.contacts__establishment{
+.contacts__establishment {
   font-size: 12px;
   line-height: 1.86;
   color: #fff;
@@ -59,118 +62,116 @@
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     font-size: 16px;
     margin-bottom: 32px;
   }
-  &--yellow{
-    background-color: #F0D1A5;
+  &--yellow {
+    background-color: #f0d1a5;
     width: 80px;
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
       width: 73px;
     }
   }
-  &--green{
-    background: #C2E297;
-    border-radius:6px;
+  &--green {
+    background: #c2e297;
+    border-radius: 6px;
     width: 130px;
-    @media screen and (min-width:768px) {
-        width: 138px;
-      }
+    @media screen and (min-width: 768px) {
+      width: 138px;
+    }
   }
 }
 
-.contact__content-wrapper{
+.contact__content-wrapper {
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 32px;
     margin-bottom: 32px;
   }
 }
 
-.contact__main-head{
+.contact__main-head {
   font-size: 12px;
   line-height: 1.86;
-  font-family:'DM Sans', sans-serif ;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  @media screen and (min-width:768px) {
-      font-size: 14px;
-    }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
   }
 }
 
-.contact__city-head{
+.contact__city-head {
   margin-bottom: 8px;
-  @media screen and (min-width:768px) {
-    @media screen and (max-width:1279.98px) {
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279.98px) {
       margin-bottom: 12px;
     }
-  
-    }
+  }
 }
 
-.contacts__day{
+.contacts__day {
   letter-spacing: 0;
-  @media screen and (min-width:1280px) {
-      letter-spacing: 0.04em;
-    }
+  @media screen and (min-width: 1280px) {
+    letter-spacing: 0.04em;
+  }
 }
-.contact__city-info{
+.contact__city-info {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0;
-  color:#907E82;
+  color: #907e82;
   font-weight: 500;
-  @media screen and (min-width:768px) {
-      font-size: 14px;
-      line-height: 1.66;
-    }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.83;
     letter-spacing: 0.04em;
   }
 }
 
-.contacts__time{
+.contacts__time {
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0;
-  color: #FFA5BA;
+  color: #ffa5ba;
   margin-bottom: 8px;
   font-weight: 500;
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
-    @media screen and (min-width:768px) {
-      font-size: 14px;
-      margin-bottom: 12px;
-    }
-    @media screen and (min-width:1280px) {
-      font-size: 16px;
-    }
-
-}
-
-.contacts__contact-link{
-  font-size: 12px;
-  line-height: 1.5;
-  color: #907E82;
-  font-weight: 500;
-  letter-spacing: 0;
-  @media screen and (min-width:768px) {
-      font-size: 14px;
-      line-height: 1.83;
-    }
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
   }
 }
 
+.contacts__contact-link {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  font-weight: 500;
+  letter-spacing: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    font-size: 16px;
+  }
+}
 
 .contacts__btn {
   display: flex;
@@ -217,21 +218,16 @@
 }
 
 .contacts__icon {
-  
   stroke: $color-text-white;
-  
+
   &--dark {
     stroke: $bg-btn-dark;
   }
-
- 
 }
-.contact__btn-name{
-  @media screen and (min-width:768px) {
-      margin-right: 7px;
-  
-    }
-  
+.contact__btn-name {
+  @media screen and (min-width: 768px) {
+    margin-right: 7px;
+  }
 }
 
 .btn-wrapper {
@@ -285,13 +281,11 @@
   background-color: transparent;
 }
 .button-close:hover ::after,
-.button-close:focus ::after{
-  
+.button-close:focus ::after {
   background-color: $bg-btn-dark;
 }
 .button-close:hover ::before,
 .button-close:focus ::before {
-
   background-color: $bg-btn-dark;
 }
 .button-close__img {
@@ -327,9 +321,8 @@
   border-radius: 22px;
   cursor: pointer;
   &:focus,
-  &:hover{
-
-    border: 1px solid ;
+  &:hover {
+    border: 1px solid;
   }
 }
 .form-textarea {
@@ -364,7 +357,7 @@
 textarea:hover,
 textarea:focus {
   outline: transparent;
-  border:1px solid $bg-btn-dark-hover;
+  border: 1px solid $bg-btn-dark-hover;
 }
 .form__input:focus + .form-img,
 .form__input:hover + .form-img {

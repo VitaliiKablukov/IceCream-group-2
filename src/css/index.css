@@ -2141,7 +2141,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .contacts__item {
-    width: calc((100% - 64px)/3);
+    width: calc((100% - 64px) / 3);
   }
   .contacts__item:not(:last-child) {
     margin-right: 32px;
@@ -2174,7 +2174,7 @@ button {
 }
 
 .contacts__establishment--yellow {
-  background-color: #F0D1A5;
+  background-color: #f0d1a5;
   width: 80px;
 }
 
@@ -2185,7 +2185,7 @@ button {
 }
 
 .contacts__establishment--green {
-  background: #C2E297;
+  background: #c2e297;
   border-radius: 6px;
   width: 130px;
 }
@@ -2198,7 +2198,7 @@ button {
 
 .contact__content-wrapper {
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 24px;
 }
 
@@ -2252,7 +2252,7 @@ button {
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 0;
-  color: #907E82;
+  color: #907e82;
   font-weight: 500;
 }
 
@@ -2275,7 +2275,7 @@ button {
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0;
-  color: #FFA5BA;
+  color: #ffa5ba;
   margin-bottom: 8px;
   font-weight: 500;
 }
@@ -2300,7 +2300,7 @@ button {
 .contacts__contact-link {
   font-size: 12px;
   line-height: 1.5;
-  color: #907E82;
+  color: #907e82;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -2314,6 +2314,7 @@ button {
 
 @media screen and (min-width: 1280px) {
   .contacts__contact-link {
+    display: block;
     font-size: 16px;
   }
 }
