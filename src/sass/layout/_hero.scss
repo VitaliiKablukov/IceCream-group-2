@@ -76,7 +76,7 @@
 
 .hero__title {
     max-width: 218px;
-    @include font (400, 26px, null, null);
+    @include font (400, 26px, 1.15, null);
     text-transform: uppercase;
     color: $color-text-white;
 
