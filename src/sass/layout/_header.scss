@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     font-family: 'Titan One';
-
     @include font (null, 26px, 0.91, 0.01em);
     text-transform: uppercase;
     color: $color-text-accent;
@@ -27,19 +26,16 @@
     margin-right: 20px;
 }
 
-
 .navigation {
     @include mediamin(1280px) {
         display: flex;
         align-items: center;
         position: absolute;
     }
-
 }
 
 .navigation__list {
     display: none;
-
     @include mediamin(1280px) {
         display: flex;
         margin-left: 175px;
@@ -109,14 +105,9 @@
     cursor: pointer;
     fill: $bg-btn-dark;
 
-
-
-
-
     @include mediamin(1280px) {
         display: none;
     }
-
 }
 
 .mob-btn__icon--open {
@@ -150,8 +141,6 @@
     transform: translateX(200%);
 }
 
-
-
 .mob-menu__btn--close {
     position: absolute;
     top: 20px;
@@ -182,13 +171,6 @@
     background-color: $bg-btn-light;
     border-radius: 22px;
     font-weight: 700;
-
-    @include mediamin(768px) {
-        margin-left: auto;
-        margin-right: auto;
-        width: 186px;
-    }
-
     transition: color 250ms $cubic-bezier;
     transition: background-color 250ms $cubic-bezier;
 
@@ -197,11 +179,16 @@
         color: $color-btn-dark;
         background-color: $bg-btn-dark-hover;
     }
+        @include mediamin(768px) {
+            margin-left: auto;
+            margin-right: auto;
+            width: 186px;
+        }
 }
 
 .mob-menu__link {
-    @include font (700, 14px, 1.29, null);
     display: flex;
+    @include font (700, 14px, 1.29, null);
     height: 42px;
     align-items: center;
     border-top: 1px solid #E18298;

@@ -1,60 +1,65 @@
-<section class="hero">
+<section class="hero" id="hero">
   <div class="container">
-    <!-- <div class="hero__main-pic"> -->
+    <div class="hero__main-pic">
+      <picture>
+        <source
+          srcset="
+            ./images/Icecream/ellipse-desk-1x.png,
+            ./images/Icecream/ellipse-desk-2x.png
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/Icecream/ellipse-tab-1x.png,
+            ./images/Icecream/ellipse-tab-2x.png
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/Icecream/ellipse-tab-1x.png,
+            ./images/Icecream/ellipse-tab-2x.png
+          "
+          media="(min-width:320px)"
+        />
 
-    <picture>
-      <source
-        srcset="
-          ./images/Icecream/ellipse-desk-1x.png,
-          ./images/Icecream/ellipse-desk-2x.png
-        "
-        media="(min-width:1280px)"
-      />
-      <source
-        srcset="
-          ./images/Icecream/ellipse-tab-1x.png,
-          ./images/Icecream/ellipse-tab-2x.png
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="
-          ./images/Icecream/ellipse-mob-1x.png,
-          ./images/Icecream/ellipse-mob-2x.png
-        "
-        media="(min-width:320px)"
-      />
+        <img
+          class="hero__img--ellipse"
+          src="./images/Icecream/ellipse-desk-1x.png"
+          alt="big ellipse"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="
+            ./images/Icecream/ice-desk-1x.png,
+            ./images/Icecream/ice-desk-2x.png
+          "
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./images/Icecream/ice-tab-1x.png,
+            ./images/Icecream/ice-tab-2x.png
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/Icecream/ice-mob-1x.png,
+            ./images/Icecream/ice-mob-2x.png
+          "
+          media="(min-width:320px)"
+        />
 
-      <img
-        class="hero__img--ellipse"
-        src="./images/Icecream/ellipse-desk-1x.png"
-      />
-    </picture>
-    <picture>
-      <source
-        srcset="
-          ./images/Icecream/ice-desk-1x.png,
-          ./images/Icecream/ice-desk-2x.png
-        "
-        media="(min-width:1280px)"
-      />
-      <source
-        srcset="
-          ./images/Icecream/ice-tab-1x.png,
-          ./images/Icecream/ice-tab-2x.png
-        "
-        media="(min-width:768px)"
-      />
-      <source
-        srcset="
-          ./images/Icecream/ice-mob-1x.png,
-          ./images/Icecream/ice-mob-2x.png
-        "
-        media="(min-width:320px)"
-      />
-
-      <img class="hero__img--icecream" src="./images/Icecream/ice-mob-1x.png" />
-    </picture>
+        <img
+          class="hero__img--icecream"
+          src="./images/Icecream/ice-mob-1x.png"
+          alt="big icecream"
+        />
+      </picture>
+    </div>
 
     <div class="hero__main-content">
       <h1 class="hero__title">
@@ -89,6 +94,7 @@
       <img
         class="hero__img--milk"
         src="./images/header/milk-header-1x-min.png"
+        alt="milk"
       />
     </picture>
     <p class="hero__text">
@@ -102,20 +108,13 @@
     </button>
     <ul class="stats__list">
       <li class="stats__item">
-        <!-- <img
-          class="hero__img--white-ellipse"
-          src="./images/Icecream/white-ellipse-desk-1x.png"
-          alt=""
-        /> -->
+        <span class="stats__circle"></span>
+
         <span class="stats__item--count">16</span>
         <p class="stats__item--text">cafes</p>
       </li>
       <li class="stats__item">
-        <!-- <img
-          class="hero__img--white-ellipse"
-          src="./images/Icecream/white-ellipse-desk-1x.png"
-          alt=""
-        /> -->
+        <span class="stats__circle"></span>
         <span class="stats__item--count">23</span>
         <p class="stats__item--text">food trucks</p>
       </li>
@@ -136,7 +135,11 @@
         "
         media="(min-width:768px)"
       />
-      <img class="hero__img--girl" src="/src/images/Icecream/girl-tab-1x.png" />
+      <img
+        class="hero__img--girl"
+        src="/src/images/Icecream/girl-tab-1x.png"
+        alt="girl with icecream"
+      />
     </picture>
   </div>
 </section>
