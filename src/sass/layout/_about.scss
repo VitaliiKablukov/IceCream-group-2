@@ -1,16 +1,6 @@
 .about {
   @media screen and (max-width: 767.98px) {
     background-color: $bg-section;
-    background-image: url(../images/about/about-bg-mob-1x-min.png);
-    background-repeat: no-repeat;
-    background-position-y: 574px;
-    background-position-x: center;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-mob-2x-min.png);
-      background-size: contain;
-    }
   }
   @media screen and (min-width: 768px) {
     padding-top: 40px;
@@ -21,16 +11,6 @@
     background-color: $bg-section;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-image: url(../images/about/about-bg-1x-min.png);
-    background-repeat: no-repeat;
-    background-position-y: 255px;
-    background-position-x: center;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-2x-min.png);
-      background-size: contain;
-    }
   }
 }
 
@@ -92,6 +72,12 @@
 .about-img {
   @media screen and (max-width: 767.98px) {
     margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 139px;
   }
 }
 .about-text {
@@ -174,18 +160,19 @@
   }
 }
 
-.about-wrap1 {
+.about-wrap-first {
+  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
-    justify-content: space-around;
   }
 }
 
-.about-wrap {
+.about-wrap-second {
+  z-index: 1;
+  position: relative;
   @media screen and (min-width: 1280px) {
     margin-top: 91px;
   }
@@ -218,47 +205,13 @@
       transform: translate(-50%, -50%) scale(0.6);
     }
   }
-  @media screen and (max-width: 767.98px) {
-    background-image: url(../images/about/about-bg-mob-1x-min.png);
-    background-repeat: no-repeat;
-    background-position-y: 386px;
-    background-position-x: center;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-mob-2x-min.png);
-      background-size: contain;
-    }
-  }
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 99px;
-    background-image: url(../images/about/about-bg-1x-min.png);
-    background-repeat: no-repeat;
-    background-position-y: 255px;
-    background-position-x: center;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-2x-min.png);
-      background-size: contain;
-    }
   }
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 99px;
-    background-image: url(../images/about/about-bg-1x-min.png);
-    background-repeat: no-repeat;
-    background-position-y: 255px;
-    background-position-x: center;
-    background-size: auto;
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/about-bg-2x-min.png);
-      background-size: contain;
-    }
   }
 }
 
@@ -342,4 +295,37 @@ button {
 
 .no-scroll {
   overflow: hidden;
+}
+.about-background {
+  position: absolute;
+  @media screen and (max-width: 767.98px) {
+    bottom: 180px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    display: none;
+  }
+}
+
+.about-background-modal {
+  position: absolute;
+  top: 75%;
+  @media screen and (min-width: 767.98px) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+.wrap-modal {
+  display: flex;
+  justify-content: center;
+}
+.modal-background-img {
+  @media screen and (max-width: 767.98px) {
+    max-width: 280px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 702px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1248px;
+  }
 }
