@@ -746,12 +746,12 @@ img {
 }
 
 /* section Products */
-.products-section {
+.section--products {
   width: 100%;
 }
 
 /* заголовки секції Products */
-.subtitle-products {
+.products__subtitle {
   font-family: "Titan One", cursive;
   text-align: center;
   letter-spacing: 0;
@@ -763,7 +763,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .subtitle-products {
+  .products__subtitle {
     font-size: 26px;
     line-height: calc(30 / 26);
     margin-bottom: 18px;
@@ -771,14 +771,14 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .subtitle-products {
+  .products__subtitle {
     font-size: 30px;
     line-height: calc(34 / 30);
     margin-bottom: 16px;
   }
 }
 
-.title-products {
+.products__title {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -789,7 +789,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .title-products {
+  .products__title {
     font-size: 48px;
     line-height: calc(55 / 48);
     margin-bottom: 154px;
@@ -797,7 +797,7 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .title-products {
+  .products__title {
     font-size: 58px;
     line-height: calc(66 / 58);
     margin-bottom: 258px;
@@ -806,7 +806,7 @@ img {
 }
 
 /*Картки продуктів секції Products*/
-.products-list {
+.products__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -815,7 +815,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .products-list {
+  .products__list {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 16px;
@@ -823,12 +823,12 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .products-list {
+  .products__list {
     gap: 32px;
   }
 }
 
-.product-item {
+.products__list--item {
   width: 100%;
   position: relative;
   display: flex;
@@ -845,13 +845,13 @@ img {
 }
 
 @media screen and (max-width: 767.98px) {
-  .product-item:not(:last-child) {
+  .products__list--item:not(:last-child) {
     margin-bottom: 140px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .product-item {
+  .products__list--item {
     max-width: 224px;
     min-height: 473px;
     flex-basis: calc((100% - 32px * 3) / 3);
@@ -859,7 +859,7 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .product-item {
+  .products__list--item {
     max-width: 394px;
     min-height: 535px;
     flex-basis: calc((100% - 32px * 3) / 3);
@@ -867,12 +867,12 @@ img {
 }
 
 /* псевдоелементи картки продуктів*/
-.front1::before,
-.front2::before,
-.front3::before,
-.back1::before,
-.back2::before,
-.back3::before {
+.front--accent::before,
+.front--beige::before,
+.front--green::before,
+.back--accent::before,
+.back--beige::before,
+.back--green::before {
   content: ' ';
   position: absolute;
   display: block;
@@ -886,12 +886,12 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .front1::before,
-  .front2::before,
-  .front3::before,
-  .back1::before,
-  .back2::before,
-  .back3::before {
+  .front--accent::before,
+  .front--beige::before,
+  .front--green::before,
+  .back--accent::before,
+  .back--beige::before,
+  .back--green::before {
     width: 224px;
     height: 224px;
     margin-top: -20px;
@@ -899,165 +899,162 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .front1::before,
-  .front2::before,
-  .front3::before,
-  .back1::before,
-  .back2::before,
-  .back3::before {
+  .front--accent::before,
+  .front--beige::before,
+  .front--green::before,
+  .back--accent::before,
+  .back--beige::before,
+  .back--green::before {
     width: 394px;
     height: 394px;
     margin-top: -50px;
   }
 }
 
-.front1::before,
-.back1::before {
+.front--accent::before,
+.back--accent::before {
   background-image: url("../images/products/products-1-1x-min.png");
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .front1::before,
-  .back1::before {
+  .front--accent::before,
+  .back--accent::before {
     background-image: url("../images/products/products-1-2x-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .front1::before,
-  .back1::before {
+  .front--accent::before,
+  .back--accent::before {
     background-image: url("../images/products/products-1-1x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
-  .front1::before,
-  .back1::before {
+  .front--accent::before,
+  .back--accent::before {
     background-image: url("../images/products/products-1-2x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .front1::before,
-  .back1::before {
+  .front--accent::before,
+  .back--accent::before {
     background-image: url("../images/products/products-1-1x-desctop-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .front1::before,
-  .back1::before {
+  .front--accent::before,
+  .back--accent::before {
     background-image: url("../images/products/products-1-2x-desctop-min.png");
   }
 }
 
-.front2::before,
-.back2::before {
+.front--beige::before,
+.back--beige::before {
   background-image: url("../images/products/products-2-1x-min.png");
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .front2::before,
-  .back2::before {
+  .front--beige::before,
+  .back--beige::before {
     background-image: url("../images/products/products-2-2x-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .front2::before,
-  .back2::before {
+  .front--beige::before,
+  .back--beige::before {
     background-image: url("../images/products/products-2-1x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
-  .front2::before,
-  .back2::before {
+  .front--beige::before,
+  .back--beige::before {
     background-image: url("../images/products/products-2-2x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .front2::before,
-  .back2::before {
+  .front--beige::before,
+  .back--beige::before {
     background-image: url("../images/products/products-2-1x-desctop-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .front2::before,
-  .back2::before {
+  .front--beige::before,
+  .back--beige::before {
     background-image: url("../images/products/products-2-2x-desctop-min.png");
   }
 }
 
-.front3::before,
-.back3::before {
+.front--green::before,
+.back--green::before {
   background-image: url("../images/products/products-3-1x-min.png");
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .front3::before,
-  .back3::before {
+  .front--green::before,
+  .back--green::before {
     background-image: url("../images/products/products-3-2x-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .front3::before,
-  .back3::before {
+  .front--green::before,
+  .back--green::before {
     background-image: url("../images/products/products-3-1x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1279.98px) and (min-resolution: 2dppx) {
-  .front3::before,
-  .back3::before {
+  .front--green::before,
+  .back--green::before {
     background-image: url("../images/products/products-3-2x-tablet-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .front3::before,
-  .back3::before {
+  .front--green::before,
+  .back--green::before {
     background-image: url("../images/products/products-3-1x-desctop-min.png");
   }
 }
 
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .front3::before,
-  .back3::before {
+  .front--green::before,
+  .back--green::before {
     background-image: url("../images/products/products-3-2x-desctop-min.png");
   }
 }
 
-.product-description {
+.product__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  padding-right: 39px;
-  padding-left: 39px;
+  padding: 160px 39px 40px;
   backface-visibility: hidden;
   /*невидима задня грань елемента*/
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
-  .product-description {
-    padding-right: 32px;
-    padding-left: 32px;
+  .product__description {
+    padding: 118px 32px 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .product-description {
-    padding-right: 75px;
-    padding-left: 75px;
+  .product__description {
+    padding: 165px 75px 60px;
   }
 }
 
-.product-title {
+.product__title {
   position: relative;
   display: inline-block;
   margin-bottom: 70px;
@@ -1067,93 +1064,80 @@ img {
   line-height: calc(23 / 20);
   text-align: center;
   text-transform: uppercase;
-  margin-top: 160px;
-}
-
-@media screen and (min-width: 768px) {
-  .product-title {
-    margin-top: 118px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  .product-title {
-    margin-top: 165px;
+  .product__title {
     font-size: 30px;
     line-height: calc(34 / 30);
   }
 }
 
 /*Стилізація 3 крапок в картках продукту*/
-.product-title::after {
+.product__title::after {
   content: '\25CF \25CF \25CF ';
   display: inline-block;
   position: absolute;
   font-size: 16px;
   width: 0.1px;
   height: 0px;
-  top: 190%;
-  left: 45%;
+  bottom: -29px;
+  left: 42%;
   background-color: #ffffff;
 }
 
-.product-text {
+.product__text {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
   text-align: center;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
-  .product-text {
+  .product__text {
     line-height: calc(25 / 14);
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .product-text {
+  .product__text {
     font-size: 16px;
     line-height: calc(28 / 16);
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 }
 
 /*Стилізація кнопки*/
-.product-btn {
-  width: 40px;
+.product__btn {
+  width: 100%;
   height: 40px;
   padding: 0;
-  margin: 0 auto 40px;
   background-color: transparent;
   fill: #d41443;
   border-radius: 50%;
   border: none;
-}
-
-@media screen and (min-width: 1280px) {
-  .product-btn {
-    margin-bottom: 60px;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 /*Стилізація flip ефекту картки*/
-.front1,
-.front2,
-.front3 {
+.front--accent,
+.front--beige,
+.front--green {
   border-radius: 24px;
 }
 
-.front1 {
+.front--accent {
   background-color: #ffb8ca;
 }
 
-.front2 {
+.front--beige {
   background-color: #f0d1a5;
 }
 
-.front3 {
+.front--green {
   background-color: #c2e297;
 }
 
@@ -1180,7 +1164,6 @@ img {
   flex-grow: 1;
   justify-content: space-between;
   border-radius: 24px;
-  background-color: #ffb8ca;
   backface-visibility: hidden;
   /*невидима задня грань елемента*/
   transform: rotateY(180deg);
@@ -1190,13 +1173,13 @@ img {
   .back {
     max-width: 280px;
     min-height: 489px;
-    padding: 160px 15px 0px;
+    padding: 160px 15px 40px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .back {
-    padding: 118px 15px 0px;
+    padding: 118px 15px 40px;
     min-height: 473px;
     flex-basis: calc((100% - 32px * 3) / 3);
   }
@@ -1204,7 +1187,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .back {
-    padding: 165px 15px 0px;
+    padding: 165px 15px 60px;
     font-size: 30px;
     line-height: calc(34 / 30);
     min-height: 535px;
@@ -1212,20 +1195,25 @@ img {
   }
 }
 
-.back2 {
+.back--accent {
+  background-color: #ffb8ca;
+}
+
+.back--beige {
   background-color: #f0d1a5;
 }
 
-.back3 {
+.back--green {
   background-color: #c2e297;
 }
 
-.back-visibility {
+.back--visibility {
   transform: rotateY(360deg);
 }
 
-.back-title {
+.back__title {
   text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 /* end section Products */
