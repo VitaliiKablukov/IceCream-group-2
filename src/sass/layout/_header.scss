@@ -188,7 +188,7 @@
 
 .mob-menu__link {
     display: flex;
-    @include font (700, 14px, 1.29, null);
+    @include font (700, 14px, 1.29, 0);
     height: 42px;
     align-items: center;
     border-top: 1px solid #E18298;
