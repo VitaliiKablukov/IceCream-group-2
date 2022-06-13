@@ -7,6 +7,7 @@ function myFlipCard_1() {
     //додавання та видалення класу
     elementOne.classList.toggle("front");
     elementTwo.classList.toggle("back-visibility");
+    elementTwo.classList.toggle("back1");
 }
 function myFlipCard_2() {
     var elementOne = document.getElementById('product2');
