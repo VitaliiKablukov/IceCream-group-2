@@ -4,7 +4,7 @@
 
     .container {
         position: relative;
-        padding-top: 192px;
+        padding-top: 194px;
         padding-bottom: 158px;
         flex-direction: column;
 
@@ -119,22 +119,30 @@
     align-items: center;
     text-align: center;
     @include font (null, 8px, 1.25, 0);
-    color: $bg-btn-light;
-    background-color: $color-btn-light;
+    color: $color-btn-dark;
+    background-color: $bg-btn-dark;
     border-radius: 20px;
     padding: 7px 15px 7px 13px;
 
     &:hover,
     &:focus {
-        color: $color-btn-light;
-        background-color: $bg-btn-light;
+        background-color: $bg-btn-dark-hover;
     }
 
     @include mediamin(1280px) {
+        padding: 11px 23px;
         @include font (null, 14px, null, null);
     }
 }
 
+.anchor__link--light {
+    color: $color-btn-light;
+    background-color: $bg-btn-light;
+    &:hover,
+    &:focus {
+        background-color: $bg-btn-light-hover;
+    }
+}
 
 .hero__img--milk {
     display: none;
@@ -185,10 +193,15 @@
     }
 
     @include mediamin(1280px) {
-        width: 26px;
-        height: 26px;
         left: 229px;
         top: 554px;
+    }
+}
+
+.icon__arrow--right {
+    @include mediamin(1280px) {
+            width: 26px;
+            height: 26px;
     }
 }
 

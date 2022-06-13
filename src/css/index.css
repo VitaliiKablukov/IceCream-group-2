@@ -176,11 +176,11 @@ img {
 }
 
 .navigation__link {
-  letter-spacing: 0;
-  line-height: 1.31;
   display: flex;
   align-items: center;
   font-weight: 700;
+  line-height: 1.31;
+  letter-spacing: 0;
   color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -196,6 +196,10 @@ img {
 .header__btn {
   display: none;
   line-height: 1.31;
+}
+
+.header__btn:hover, .header__btn:focus {
+  background-color: #ecebeb;
 }
 
 @media screen and (min-width: 768px) {
@@ -217,12 +221,6 @@ img {
   .header__btn {
     margin-left: auto;
   }
-}
-
-.header__btn:hover,
-.header__btn:focus {
-  color: #ffffff;
-  background-color: #c7133e;
 }
 
 .btn__icon--arrow {
@@ -256,16 +254,22 @@ img {
   top: 0;
   right: 0;
   width: 250px;
-  height: 100vh;
+  max-height: 100vh;
   background-color: #e17992;
   transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(0);
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    height: 100vh;
+  }
+}
+
 .mob-menu .container {
   flex-direction: column;
   height: 100%;
-  padding: 60px 20px 185px 20px;
+  padding: 60px 20px 170px 20px;
 }
 
 @media screen and (min-width: 1280px) {
@@ -292,18 +296,13 @@ img {
 
 .mob-btn__icon--close {
   stroke: #ffffff;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-btn__icon--close:hover, .mob-btn__icon--close:focus {
-  stroke: #d41443;
 }
 
 .mob-menu__btn {
   display: block;
   width: 209px;
   min-height: 44px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   background-color: #ffffff;
   border-radius: 22px;
   font-weight: 700;
@@ -312,8 +311,7 @@ img {
 }
 
 .mob-menu__btn:hover, .mob-menu__btn:focus {
-  color: #ffffff;
-  background-color: #c7133e;
+  background-color: #ecebeb;
 }
 
 @media screen and (min-width: 768px) {
@@ -409,7 +407,7 @@ img {
 
 .hero .container {
   position: relative;
-  padding-top: 192px;
+  padding-top: 194px;
   padding-bottom: 158px;
   flex-direction: column;
 }
@@ -560,14 +558,23 @@ img {
 }
 
 .anchor__link:hover, .anchor__link:focus {
-  color: #d41443;
-  background-color: #ffffff;
+  background-color: #c7133e;
 }
 
 @media screen and (min-width: 1280px) {
   .anchor__link {
+    padding: 11px 23px;
     font-size: 14px;
   }
+}
+
+.anchor__link--light {
+  color: #d41443;
+  background-color: #ffffff;
+}
+
+.anchor__link--light:hover, .anchor__link--light:focus {
+  background-color: #ecebeb;
 }
 
 .hero__img--milk {
@@ -635,10 +642,15 @@ img {
 
 @media screen and (min-width: 1280px) {
   .hero__text--arrow {
-    width: 26px;
-    height: 26px;
     left: 229px;
     top: 554px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .icon__arrow--right {
+    width: 26px;
+    height: 26px;
   }
 }
 

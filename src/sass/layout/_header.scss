@@ -36,6 +36,7 @@
 
 .navigation__list {
   display: none;
+
   @include mediamin(1280px) {
     display: flex;
     margin-left: 175px;
@@ -47,11 +48,9 @@
 }
 
 .navigation__link {
-  letter-spacing: 0;
-  line-height: 1.31;
   display: flex;
   align-items: center;
-  font-weight: 700;
+  @include font(700, null, 1.31, 0);
   color: $color-text-white;
   transition: color 250ms $cubic-bezier;
 
@@ -69,6 +68,11 @@
   display: none;
   line-height: 1.31;
 
+  &:hover,
+  &:focus {
+      background-color: $bg-btn-light-hover;
+    }
+
   @include mediamin(768px) {
     display: flex;
     margin-right: 0;
@@ -85,12 +89,6 @@
   @include mediamin(1280px) {
     margin-left: auto;
   }
-}
-
-.header__btn:hover,
-.header__btn:focus {
-  color: $color-btn-dark;
-  background-color: $bg-btn-dark-hover;
 }
 
 .btn__icon--arrow {
@@ -122,15 +120,19 @@
   top: 0;
   right: 0;
   width: 250px;
-  height: 100vh;
+  max-height: 100vh;
   background-color: $bg-mobile-menu;
   transition: transform 700ms $cubic-bezier;
   transform: translateX(0);
 
+  @include mediamin(768px) {
+    height: 100vh;
+  }
+
   .container {
     flex-direction: column;
     height: 100%;
-    padding: 60px 20px 185px 20px;
+    padding: 60px 20px 170px 20px;
   }
 
   @include mediamin(1280px) {
@@ -152,23 +154,18 @@
   background-color: $bg-mobile-menu;
   padding: 0;
   cursor: pointer;
+  
 }
 
 .mob-btn__icon--close {
   stroke: $color-text-white;
-  transition: stroke 250ms $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    stroke: $color-text-accent;
-  }
 }
 
 .mob-menu__btn {
   display: block;
   width: 209px;
   min-height: 44px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   background-color: $bg-btn-light;
   border-radius: 22px;
   font-weight: 700;
@@ -177,9 +174,9 @@
 
   &:hover,
   &:focus {
-    color: $color-btn-dark;
-    background-color: $bg-btn-dark-hover;
-  }
+      background-color: $bg-btn-light-hover;
+    }
+
   @include mediamin(768px) {
     margin-left: auto;
     margin-right: auto;
