@@ -1669,13 +1669,12 @@ button {
 @media screen and (min-width: 768px) {
   .advantages__list {
     display: flex;
-    justify-content: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .advantages__list {
-    margin: 0 calc((100% - 540px)/2);
+    margin-right: calc((100% - 540px));
   }
 }
 
@@ -1722,7 +1721,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .advantages__item {
-    text-align: center;
     width: calc((100% - 32px) / 3);
     margin-right: 16px;
   }
@@ -1733,7 +1731,6 @@ button {
 
 @media screen and (min-width: 1280px) {
   .advantages__item {
-    text-align: center;
     width: calc((100% - 407px) / 3);
     margin-right: 142px;
   }
@@ -1770,7 +1767,7 @@ button {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.7;
-  letter-spacing: 0.02em;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1784,6 +1781,7 @@ button {
   .advantages__content-info {
     font-size: 16px;
     line-height: 1.76;
+    letter-spacing: 0.02em;
   }
 }
 
