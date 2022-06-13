@@ -1,9 +1,9 @@
 /* section Products */
-.products-section {
+.section--products {
   width: 100%;
 }
 /* заголовки секції Products */
-.subtitle-products {
+.products__subtitle {
   font-family: $font-h;
   text-align: center;
   letter-spacing: 0;
@@ -24,7 +24,7 @@
     margin-bottom: 16px;
   }
 }
-.title-products {
+.products__title {
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
   }
 }
 /*Картки продуктів секції Products*/
-.products-list {
+.products__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -62,7 +62,7 @@
     gap: 32px;
   }
 }
-.product-item {
+.products__list--item {
   width: 100%;
   position: relative;
   display: flex;
@@ -93,12 +93,12 @@
 }
 /* псевдоелементи картки продуктів*/
 
-.front_accent::before,
-.front_beige::before,
-.front_green::before,
-.back_accent::before,
-.back_beige::before,
-.back_green::before {
+.front--accent::before,
+.front--beige::before,
+.front--green::before,
+.back--accent::before,
+.back--beige::before,
+.back--green::before {
   content: ' ';
   position: absolute;
   display: block;
@@ -123,8 +123,8 @@
   }
 }
 
-.front_accent::before,
-.back_accent::before {
+.front--accent::before,
+.back--accent::before {
   background-image: url('../images/products/products-1-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -149,8 +149,8 @@
   }
 }
 
-.front_beige::before,
-.back_beige::before {
+.front--beige::before,
+.back--beige::before {
   background-image: url('../images/products/products-2-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -175,8 +175,8 @@
   }
 }
 
-.front_green::before,
-.back_green::before {
+.front--green::before,
+.back--green::before {
   background-image: url('../images/products/products-3-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -200,30 +200,32 @@
     }
   }
 }
-.product-description {
+.product__description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
+  padding-top: 160px;
   padding-right: 39px;
   padding-left: 39px;
   backface-visibility: hidden; /*невидима задня грань елемента*/
   transition: 1s $cubic-bezier;
   @include mediamin(768px) {
+    padding-top: 118px;
     padding-right: 32px;
     padding-left: 32px;
   }
   @include mediamin(1280px) {
+    padding-top: 165px;
     padding-right: 75px;
     padding-left: 75px;
   }
 }
 
-.product-title {
+.product__title {
   position: relative;
   display: inline-block;
-  padding-bottom: 70px;
-  padding-top: 160px;
+  margin-bottom: 70px;
   font-family: $font-h;
   font-weight: 400;
   font-size: 20px;
@@ -231,29 +233,25 @@
   text-align: center;
   text-transform: uppercase;
 
-  @include mediamin(768px) {
-    padding-top: 118px;
-  }
   @include mediamin(1280px) {
-    padding-top: 165px;
     font-size: 30px;
     line-height: calc(34 / 30);
   }
 }
 /*Стилізація 3 крапок в картках продукту*/
 
-.product-title::after {
+.product__title::after {
   content: '\25CF \25CF \25CF ';
   display: inline-block;
   position: absolute;
   font-size: 16px;
   width: 0.1px;
   height: 0px;
-  bottom: 42px;
+  bottom: -29px;
   left: 42%;
   background-color: $color-text-white;
 }
-.product-text {
+.product__text {
   font-family: $font-main;
   font-weight: 700;
   font-size: 14px;
@@ -271,7 +269,7 @@
 }
 /*Стилізація кнопки*/
 
-.product-btn {
+.product__btn {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -286,18 +284,18 @@
   }
 }
 /*Стилізація flip ефекту картки*/
-.front_accent,
-.front_beige,
-.front_green {
+.front--accent,
+.front--beige,
+.front--green {
   border-radius: 24px;
 }
-.front_accent {
+.front--accent {
   background-color: $bg-accent-color;
 }
-.front_beige {
+.front--beige {
   background-color: $bg-beige-color;
 }
-.front_green {
+.front--green {
   background-color: $bg-green-color;
 }
 .front,
@@ -344,20 +342,21 @@
     flex-basis: calc((100% - 32px * 3) / 3);
   }
 }
-.back_accent {
+.back--accent {
   background-color: $bg-accent-color;
 }
-.back_beige {
+.back--beige {
   background-color: $bg-beige-color;
 }
-.back_green {
+.back--green {
   background-color: $bg-green-color;
 }
 
-.back-visibility {
+.back--visibility {
   transform: rotateY(360deg);
 }
-.back-title {
+.back__title {
   text-transform: uppercase;
+  margin-bottom: 35px;
 }
 /* end section Products */
