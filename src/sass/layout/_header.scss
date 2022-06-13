@@ -206,6 +206,7 @@
     color: $color-text-accent;
   }
 }
+/* модальне выкно в секцїї hero  для кнопки  Byu Now*/
 .backdrop {
   z-index: 99;
 }
@@ -214,6 +215,7 @@
     25px 15px 15px rgba(255, 255, 255, 0.6),
     5px 15px 15px rgba(255, 255, 255, 0.6);
 }
+
 .shop__title {
   font-family: $font-h;
   text-align: center;
@@ -221,18 +223,24 @@
   text-transform: uppercase;
   color: $color-text-accent;
   margin-bottom: 20px;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.3;
   display: block;
   text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.8),
     0px 2px 2px rgba(255, 255, 255, 0.6), 0px 2px 2px rgba(255, 255, 255, 0.6);
 }
+.shop__field {
+  flex-direction: column;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
 .shop__label {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   color: $color-text-white;
   font-family: inherit;
   font-size: 18px;
@@ -257,3 +265,31 @@
   text-align: center;
   color: $color-text-white;
 }
+.shop__btn {
+  margin-bottom: 5px;
+}
+.shop__btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  min-width: 162px;
+  min-height: 44px;
+  background-color: $bg-btn-dark;
+  color: $color-text-white;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0;
+  transition: background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-dark-hover;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 192px;
+  }
+}
+/* end модальне вiкно в секцїї hero  для кнопки Byu Now*/
