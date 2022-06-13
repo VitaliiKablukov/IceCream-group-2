@@ -12,10 +12,9 @@
         }
     @media screen and (min-width:768px) {
         display: flex;
-        justify-content: center;
        
         @media screen and (max-width:1279.98px) {
-                margin: 0 calc((100% - 540px)/2);
+                margin-right:calc((100% - 540px));
             }
     }
     
@@ -49,7 +48,6 @@
         }
     }
     @media screen and (min-width:768px) {
-        text-align: center;
         width:calc((100% - 32px) / 3 );
         margin-right: 16px;
         &:last-child{
@@ -57,7 +55,6 @@
         }
     }
         @media screen and (min-width:1280px) {
-            text-align: center;
             width: calc((100% - 407px) / 3);
             margin-right: 142px;
     
@@ -90,7 +87,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
-    letter-spacing: 0.02em;
+    letter-spacing: 0;
     @media screen and (min-width:768px) {
             font-size: 14px;
             line-height: 1.74;
@@ -99,5 +96,6 @@
     @media screen and (min-width:1280px) {
         font-size: 16px;
         line-height: 1.76;
+        letter-spacing: 0.02em;
     }
 }
