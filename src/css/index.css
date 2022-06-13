@@ -2302,6 +2302,7 @@ button {
   line-height: 1.5;
   color: #907E82;
   font-weight: 500;
+  letter-spacing: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -2311,7 +2312,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .contacts__contact-link {
     font-size: 16px;
   }
