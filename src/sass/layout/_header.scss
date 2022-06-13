@@ -65,6 +65,7 @@
 
 .header__btn {
     display: none;
+  line-height: 1.31;
 
     @include mediamin(768px) {
         display: flex;
