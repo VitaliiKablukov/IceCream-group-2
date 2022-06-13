@@ -7,19 +7,19 @@ function myFlipCard_1() {
     //додавання та видалення класу
     elementOne.classList.toggle("front");
     elementTwo.classList.toggle("back-visibility");
-    elementTwo.classList.toggle("back1");
+    elementTwo.classList.toggle("back_accent");
 }
 function myFlipCard_2() {
     var elementOne = document.getElementById('product2');
     var elementTwo = document.getElementById('back2');
     elementOne.classList.toggle("front");
     elementTwo.classList.toggle("back-visibility");
-    elementTwo.classList.toggle("back2");
+    elementTwo.classList.toggle("back_beige");
 }
 function myFlipCard_3() {
     var elementOne = document.getElementById('product3');
     var elementTwo = document.getElementById('back3');
     elementOne.classList.toggle("front");
     elementTwo.classList.toggle("back-visibility");
-    elementTwo.classList.toggle("back3");
+    elementTwo.classList.toggle("back_green");
 }
