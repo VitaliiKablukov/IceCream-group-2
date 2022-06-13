@@ -92,7 +92,13 @@
   }
 }
 /* псевдоелементи картки продуктів*/
-.product-item::before {
+//.product-item::before {
+.front1::before,
+.front2::before,
+.front3::before,
+.back1::before,
+.back2::before,
+.back3::before {
   content: ' ';
   position: absolute;
   display: block;
@@ -116,7 +122,9 @@
     margin-top: -50px;
   }
 }
-.product-item:nth-child(1)::before {
+//.product-item:nth-child(1)::before {
+.front1::before,
+.back1::before {
   background-image: url('../images/products/products-1-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -140,7 +148,9 @@
     }
   }
 }
-.product-item:nth-child(2)::before {
+//.product-item:nth-child(2)::before {
+.front2::before,
+.back2::before {
   background-image: url('../images/products/products-2-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -164,7 +174,9 @@
     }
   }
 }
-.product-item:nth-child(3)::before {
+//.product-item:nth-child(3)::before {
+.front3::before,
+.back3::before {
   background-image: url('../images/products/products-3-1x-min.png');
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
