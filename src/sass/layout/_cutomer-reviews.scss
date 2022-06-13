@@ -21,11 +21,13 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     max-width: 620px;
+    background-color: transparent;
     padding: 23px 6px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1034px;
     padding: 32px 105px;
+    background-color: $bg-quote;
   }
 }
 
@@ -36,9 +38,6 @@
   padding: 13px 0;
   text-align: center;
   max-height: 260px;
-  overflow: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   @media screen and (min-width: 768px) {
     max-width: 514px;
     max-height: 108px;
@@ -49,11 +48,6 @@
     max-height: 75px;
     padding: 20px 35px 0 35px;
   }
-}
-
-.slide-review__gradientbox::-webkit-scrollbar {
-  width: 0;
-  height: 0;
 }
 
 .slide-review__text::before {
