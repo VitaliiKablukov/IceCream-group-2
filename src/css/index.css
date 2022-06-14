@@ -2198,6 +2198,14 @@ button {
   display: none;
 }
 
+.slick-next.slick-arrow {
+  display: none !important;
+}
+
+.slick-prev.slick-arrow {
+  display: none !important;
+}
+
 .contacts {
   background-image: linear-gradient(to bottom, #ffffff 25%, #fff5f6 25% 100%);
 }

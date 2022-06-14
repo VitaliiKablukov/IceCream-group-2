@@ -122,3 +122,11 @@
 .slick-dots li.slick-active button:before {
   display: none;
 }
+
+.slick-next.slick-arrow{
+  display: none !important;}
+
+.slick-prev.slick-arrow {
+   display: none !important;
+    
+}
