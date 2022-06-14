@@ -2,7 +2,32 @@
   <div class="container container-about">
     <p class="about-text-top">tradition and love</p>
     <h2 class="about-title">how it’s made?</h2>
-    <div class="about-wrap1">
+    <div class="about-wrap-first">
+      <div class="about-background">
+        <picture>
+          <source
+            srcset="
+              ./images/about/about-bg-1x-min.png 1x,
+              ./images/about/about-bg-2x-min.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/about/about-bg-mob-1x-min.png 1x,
+              ./images/about/about-bg-mob-2x-min.png 2x
+            "
+            media="(max-width:767.98px)"
+          />
+          <img
+            src="./images/about/about-bg-1x-min.png"
+            width="1278"
+            height="521"
+            alt="milk"
+            class="about-background-img"
+          />
+        </picture>
+      </div>
       <picture>
         <source
           srcset="
@@ -28,10 +53,10 @@
         <img
           src="./images/about/about-cow-tab-1x-min.png"
           class="about-img"
-          alt=""
+          alt="cow"
         />
       </picture>
-      <div class="about-wrap">
+      <div class="about-wrap-second">
         <p class="about-text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
           cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
@@ -53,6 +78,33 @@
       </div>
     </div>
     <div class="backdrop is-hidden" data-backdrop>
+      <div class="wrap-modal">
+        <div class="about-background-modal">
+          <picture>
+            <source
+              srcset="
+                ./images/about/about-bg-1x-min.png 1x,
+                ./images/about/about-bg-2x-min.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="
+                ./images/about/about-bg-mob-1x-min.png 1x,
+                ./images/about/about-bg-mob-2x-min.png 2x
+              "
+              media="(max-width:767.98px)"
+            />
+            <img
+              src="./images/about/about-bg-1x-min.png"
+              width="1278"
+              height="521"
+              alt="milk"
+              class="modal-background-img"
+            />
+          </picture>
+        </div>
+      </div>
       <div class="modal">
         <div class="bb">
           <p class="modal-text">
