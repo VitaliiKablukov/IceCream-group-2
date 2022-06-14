@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   @media screen and (max-width: 767.98px) {
     background-color: $bg-section;
   }
@@ -295,15 +296,6 @@ button {
 .no-scroll {
   overflow: hidden;
 }
-.about-background {
-  position: absolute;
-  @media screen and (max-width: 767.98px) {
-    bottom: 180px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-    display: none;
-  }
-}
 
 .about-background-modal {
   position: absolute;
@@ -319,12 +311,36 @@ button {
 }
 .modal-background-img {
   @media screen and (max-width: 767.98px) {
-    max-width: 280px;
+    max-width: 320px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 702px;
+    max-width: 768px;
   }
   @media screen and (min-width: 1280px) {
-    max-width: 1248px;
+    max-width: 1280px;
+  }
+}
+
+.wrap-about-background {
+  display: flex;
+  justify-content: center;
+}
+.about-background-img {
+  max-width: 320px;
+  @media screen and (min-width: 1280px) {
+    max-width: 1278px;
+  }
+}
+
+.about-background {
+  position: absolute;
+  @media screen and (max-width: 767.98px) {
+    top: 574px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 255px;
   }
 }
