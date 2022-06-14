@@ -155,8 +155,7 @@
   }
   &:hover,
   &:focus {
-    color: $color-text-white;
-    background-color: $bg-btn-dark-hover;
+    background-color: $bg-btn-light-hover;
   }
 }
 
@@ -179,11 +178,11 @@
 }
 
 .about-icon {
-  stroke: $bg-btn-dark;
+  stroke: $color-btn-light;
   margin-left: 14px;
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .about-button:hover & {
-    stroke: $color-text-white;
+    stroke: $color-btn-light;
   }
 }
 
