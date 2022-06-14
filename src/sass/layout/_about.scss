@@ -155,7 +155,8 @@
   }
   &:hover,
   &:focus {
-    background-color: $bg-btn-light-hover;
+    color: $color-text-white;
+    background-color: $bg-btn-dark-hover;
   }
 }
 
@@ -248,7 +249,7 @@ button {
   cursor: pointer;
 }
 
-.icon-close {
+.icon-close-about {
   position: absolute;
   top: 18px;
   right: 16px;
