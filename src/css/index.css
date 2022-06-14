@@ -124,17 +124,24 @@ img {
   position: absolute;
   width: 100%;
   z-index: 1;
-}
-
-.header .container {
-  display: flex;
   padding-top: 8px;
 }
 
 @media screen and (min-width: 768px) {
-  .header .container {
+  .header {
     padding-top: 32px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 37px;
+  }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -403,27 +410,27 @@ img {
 .hero {
   background-color: #ffb8ca;
   overflow: hidden;
-}
-
-.hero .container {
-  position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
-  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .hero .container {
+  .hero {
     padding-top: 102px;
     padding-bottom: 190px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero .container {
+  .hero {
     padding-top: 146px;
     padding-bottom: 316px;
   }
+}
+
+.hero .container {
+  position: relative;
+  flex-direction: column;
 }
 
 .hero__img--ellipse {

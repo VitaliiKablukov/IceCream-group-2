@@ -2,14 +2,19 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-
-  .container {
-    display: flex;
-    padding-top: 8px;
-
+  padding-top: 8px;
+  
     @include mediamin(768px) {
       padding-top: 32px;
     }
+
+    @include mediamin(1280px) {
+      padding-top: 37px;
+    }
+
+  .container {
+    display: flex;
+    align-items: center;
   }
 }
 
