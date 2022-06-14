@@ -125,7 +125,7 @@
   top: 0;
   right: 0;
   width: 250px;
-  max-height: 100vh;
+  height: 100vh;
   background-color: $bg-mobile-menu;
   transition: transform 700ms $cubic-bezier;
   transform: translateX(0);

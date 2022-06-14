@@ -311,7 +311,7 @@ img {
   top: 0;
   right: 0;
   width: 250px;
-  max-height: 100vh;
+  height: 100vh;
   background-color: #e17992;
   transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateX(0);
