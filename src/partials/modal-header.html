@@ -1,0 +1,46 @@
+<div class="backdrop backdrop__contacts is-hidden" header-modal>
+  <div class="modal-franch modal__shop">
+    <form class="form" action="#">
+      <h2 class="shop__title">Buy now</h2>
+      <div class="shop__field">
+        <label for="username_shop" class="shop__label">Name</label>
+        <input
+          type="text"
+          name="username_shop"
+          id="username_shop"
+          class="form__input"
+        />
+      </div>
+      <div class="shop__field">
+        <label for="tel_shop" class="shop__label">Phone number</label>
+        <input type="tel" name="tel_shop" id="tel_shop" class="form__input" />
+      </div>
+      <div class="shop__field">
+        <label for="shop_select" class="shop__label"
+          >Select a product to buy</label
+        >
+        <select
+          class="form__input shop__select"
+          id="shop_select"
+          name="shop_select"
+        >
+          <option value="icecream">Ice Cream - 5$</option>
+          <option value="icecoffee">Ice Coffee - 6$</option>
+          <option value="milkshakes">Milkshakes - 6$</option>
+        </select>
+      </div>
+      <button type="submit" class="shop__btn">
+        Buy now
+      </button>
+      <p class="shop__text">
+        Thanks for your order! Our manager will contact you to clarify the
+        details.
+      </p>
+    </form>
+    <button type="button" class="button-close shop__btn--close" header-modal-close>
+      <svg class="shop__icon-close" width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

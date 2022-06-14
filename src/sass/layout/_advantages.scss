@@ -1,0 +1,104 @@
+.advantages {
+    background-color: $bg-section;
+    @media screen and (max-width:767.9px) {
+            padding-top: 0;
+        }
+    
+}
+
+.advantages__list{
+    @media screen and (max-width:767.9px) {
+            margin-bottom: -32px;
+        }
+    @media screen and (min-width:768px) {
+        display: flex;
+       
+        @media screen and (max-width:1279.98px) {
+                margin-right:calc((100% - 540px));
+            }
+    }
+    
+}
+
+.advantages__item{
+    @media screen and (max-width:767.9px) {
+        margin-bottom: 32px;
+    }
+    width: 230px;
+    &.advantages--milk::before{
+        content: url(../images/advantages/advantages-1-1x-min.png);
+    }
+    &.advantages--apple::before {
+        content: url(../images/advantages/advantages-2-1x-min.png);
+    }
+    &.advantages--heart::before {
+        content: url(../images/advantages/advantages-3-1x-min.png);
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        margin-bottom: 16px;
+        height: 50px;
+        @media screen and (min-width:768px) {
+            margin-bottom: 36px;
+        
+        }
+        @media screen and (min-width:1280px) {
+            margin-bottom: 40px;
+        }
+    }
+    @media screen and (min-width:768px) {
+        width:calc((100% - 32px) / 3 );
+        margin-right: 16px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+        @media screen and (min-width:1280px) {
+            width: calc((100% - 407px) / 3);
+            margin-right: 142px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+            &:nth-child(2){
+                margin-right: 138px;
+            }
+        }
+   
+}
+
+.advantages__content-head {
+    color: $color-text-accent;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 1.14;
+    margin-bottom: 13px;
+    @media screen and (min-width:768px) {
+        font-size: 48px; 
+        line-height: 1.15;
+    }
+    @media screen and (min-width:1280px) {
+        font-size: 58px;
+        margin-bottom: 16px;
+        line-height: 1.14;
+    }
+}
+
+.advantages__content-info{
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 0;
+    @media screen and (min-width:768px) {
+            font-size: 14px;
+            line-height: 1.74;
+    }
+
+    @media screen and (min-width:1280px) {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.02em;
+    }
+}

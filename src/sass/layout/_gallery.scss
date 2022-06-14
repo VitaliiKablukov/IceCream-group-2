@@ -1,0 +1,89 @@
+.gallery {
+  background-image: linear-gradient($bg-section 37%, #ffffff 37%, #ffffff);
+}
+
+.gallery__image-set {
+  display: grid;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    grid-column-gap: 2px;
+    grid-row-gap: 0.666px;
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(8, 13.333px);
+  }
+  @media screen and (min-width: 768px) {
+    grid-column-gap: 4px;
+    grid-row-gap: 1.333px;
+    grid-template-columns: repeat(6, 80px);
+    grid-template-rows: repeat(8, 26.666px);
+  }
+  @media screen and (min-width: 1280px) {
+    grid-column-gap: 6px;
+    grid-row-gap: 2px;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(8, 46.666px);
+  }
+}
+
+.gallery__thumb {
+  @media screen and (max-width: 767px) {
+    max-width: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 140px;
+  }
+  transition: transform $transition-time $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    z-index: 1;
+    transform: scale(2);
+  }
+}
+.thumb-a {
+  @include grid(3, 6, 1, 2);
+}
+
+.thumb-b {
+  @include grid(2, 5, 2, 3);
+  margin-bottom: 6px;
+}
+
+.thumb-c {
+  @include grid(5, 8, 2, 3);
+}
+
+.thumb-d {
+  @include grid(1, 4, 3, 4);
+}
+
+.thumb-e {
+  @include grid(4, 7, 3, 4);
+}
+
+.thumb-f {
+  @include grid(2, 5, 4, 5);
+}
+
+.thumb-g {
+  @include grid(5, 8, 4, 5);
+}
+
+.thumb-h {
+  @include grid(1, 4, 5, 6);
+}
+
+.thumb-i {
+  @include grid(4, 7, 5, 6);
+}
+
+.thumb-j {
+  @include grid(3, 6, 6, 7);
+}
+
+.gallery__image {
+  border-radius: 15%;
+}

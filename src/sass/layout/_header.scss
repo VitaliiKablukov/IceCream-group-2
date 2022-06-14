@@ -1,0 +1,309 @@
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+
+  .container {
+    display: flex;
+    padding-top: 8px;
+
+    @include mediamin(768px) {
+      padding-top: 32px;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Titan One';
+  @include font(null, 26px, 0.91, 0.01em);
+  text-transform: uppercase;
+  color: $color-text-accent;
+}
+
+.logo__icon {
+  margin-right: 20px;
+}
+
+.navigation {
+  @include mediamin(1280px) {
+    display: flex;
+    align-items: center;
+    position: absolute;
+  }
+}
+
+.navigation__list {
+  display: none;
+  @include mediamin(1280px) {
+    display: flex;
+    margin-left: 175px;
+  }
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.navigation__link {
+  letter-spacing: 0;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: $color-text-white;
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $color-text-accent;
+  }
+}
+
+.navigation__link--current {
+  color: $color-text-accent;
+}
+
+.header__btn {
+  display: none;
+  line-height: 1.31;
+
+  @include mediamin(768px) {
+    display: flex;
+    margin-right: 0;
+    margin-left: 32px;
+    width: 160px;
+    height: 44px;
+    background-color: $bg-btn-light;
+    border-radius: 22px;
+    font-weight: 700;
+    transition: color 250ms $cubic-bezier;
+    transition: background-color 250ms $cubic-bezier;
+  }
+
+  @include mediamin(1280px) {
+    margin-left: auto;
+  }
+}
+
+.header__btn:hover,
+.header__btn:focus {
+  color: $color-btn-dark;
+  background-color: $bg-btn-dark-hover;
+}
+
+.btn__icon--arrow {
+  margin-left: 12px;
+  fill: currentColor;
+}
+
+.mob-menu__btn--open {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin-left: auto;
+  background-color: transparent;
+  cursor: pointer;
+  fill: $bg-btn-dark;
+
+  @include mediamin(1280px) {
+    display: none;
+  }
+}
+
+.mob-btn__icon--open {
+  stroke: $color-text-accent;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: $bg-mobile-menu;
+  transition: transform 700ms $cubic-bezier;
+  transform: translateX(0);
+
+  .container {
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 20px 185px 20px;
+  }
+
+  @include mediamin(1280px) {
+    display: none;
+  }
+}
+
+.header .mob-menu.is-hidden {
+  transform: translateX(200%);
+}
+
+.mob-menu__btn--close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: block;
+  border: none;
+  margin-left: auto;
+  background-color: $bg-mobile-menu;
+  padding: 0;
+  cursor: pointer;
+}
+
+.mob-btn__icon--close {
+  stroke: $color-text-white;
+  transition: stroke 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    stroke: $color-text-accent;
+  }
+}
+
+.mob-menu__btn {
+  display: block;
+  width: 209px;
+  min-height: 44px;
+  margin-bottom: 20px;
+  background-color: $bg-btn-light;
+  border-radius: 22px;
+  font-weight: 700;
+  transition: color 250ms $cubic-bezier;
+  transition: background-color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $color-btn-dark;
+    background-color: $bg-btn-dark-hover;
+  }
+  @include mediamin(768px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 186px;
+  }
+}
+
+.mob-menu__link {
+  display: flex;
+  @include font(700, 14px, 1.29, 0);
+  height: 42px;
+  align-items: center;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  color: $color-text-white;
+  transition: color 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $color-text-accent;
+  }
+
+  &--current {
+    color: $color-text-accent;
+  }
+}
+/* модальне вікно в секцїї hero  для кнопки  Byu Now*/
+.backdrop {
+  z-index: 99;
+}
+.modal__shop {
+  box-shadow: 5px 10px 10px rgba(255, 255, 255, 0.8),
+    25px 15px 15px rgba(255, 255, 255, 0.6),
+    5px 15px 15px rgba(255, 255, 255, 0.6);
+}
+
+.shop__title {
+  font-family: $font-h;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $color-text-accent;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: block;
+  text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.8),
+    0px 2px 2px rgba(255, 255, 255, 0.6), 0px 2px 2px rgba(255, 255, 255, 0.6);
+}
+.shop__field {
+  flex-direction: column;
+  margin-bottom: 20px;
+  display: flex;
+  position: relative;
+}
+.shop__label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2px;
+  color: $color-text-white;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  text-shadow: 1px 2px 2px rgba(212, 20, 67, 0.8),
+    0px 2px 2px rgba(212, 20, 67, 0.6), 0px 2px 2px rgba(212, 20, 67, 0.6);
+  @include mediamin(768px) {
+    font-size: 22px;
+  }
+}
+.shop__select {
+  width: 100%;
+  background-color: $color-text-white;
+}
+.shop__text {
+  margin-bottom: 4px;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+  text-align: center;
+  color: $color-text-white;
+}
+.shop__btn {
+  margin-bottom: 5px;
+}
+.shop__btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  min-width: 162px;
+  min-height: 44px;
+  background-color: $bg-btn-dark;
+  color: $color-text-white;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0;
+  transition: background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-dark-hover;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 192px;
+  }
+}
+.shop__btn--close {
+  width: 50px;
+  height: 50px;
+}
+.shop__icon-close {
+  position: absolute;
+  stroke: $color-text-white;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* кінець стилів для модального вiкна в секцїї hero */

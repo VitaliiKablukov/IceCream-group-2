@@ -1,0 +1,409 @@
+.contacts {
+  @media screen and (max-width: 767.98px) {
+    padding-top: 8px;
+  }
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff 25%,
+    $bg-section 25% 100%
+  );
+}
+.contacts__container {
+  @media screen and (min-width: 768px) {
+    padding: 0 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0 16px;
+  }
+}
+
+.contacts__list {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+  }
+}
+.contacts__item {
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  padding: 40px 32px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and(max-width:767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and(min-width:768px) {
+    width: calc((100% - 64px) / 3);
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 40px 40px;
+  }
+}
+
+.contacts__establishment {
+  font-size: 12px;
+  line-height: 1.86;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  &--yellow {
+    background-color: #f0d1a5;
+    width: 80px;
+    @media screen and (min-width: 768px) {
+      width: 73px;
+    }
+  }
+  &--green {
+    background: #c2e297;
+    border-radius: 6px;
+    width: 130px;
+    @media screen and (min-width: 768px) {
+      width: 138px;
+    }
+  }
+}
+
+.contact__content-wrapper {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+.contact__main-head {
+  font-size: 12px;
+  line-height: 1.86;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contact__city-head {
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    @media screen and (max-width: 1279.98px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.contacts__day {
+  letter-spacing: 0;
+  @media screen and (min-width: 1280px) {
+    letter-spacing: 0.04em;
+  }
+}
+.contact__city-info {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #907e82;
+  font-weight: 500;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+  }
+}
+
+.contacts__time {
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0;
+  color: #ffa5ba;
+  margin-bottom: 8px;
+  font-weight: 500;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+.contacts__contact-link {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+  font-weight: 500;
+  letter-spacing: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.83;
+  }
+  @media screen and (min-width: 1280px) {
+    display: block;
+    font-size: 16px;
+  }
+}
+
+.contacts__btn {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-width: 162px;
+  min-height: 44px;
+  background-color: $bg-btn-dark;
+  color: $color-text-white;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  letter-spacing: 0;
+  transition: background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-dark-hover;
+  }
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    min-width: 192px;
+  }
+  &--light {
+    @media screen and (max-width: 767.9px) {
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-left: 15px;
+    }
+    background-color: $color-text-white;
+    color: $bg-btn-dark;
+    transition: background-color 250ms $cubic-bezier;
+    &:hover,
+    &:focus {
+      background-color: $bg-btn-light-hover;
+    }
+  }
+
+  &--submit {
+    margin: 0 auto;
+    padding-right: 0;
+  }
+}
+
+.contacts__icon {
+  stroke: $color-text-white;
+
+  &--dark {
+    stroke: $bg-btn-dark;
+  }
+}
+.contact__btn-name {
+  @media screen and (min-width: 768px) {
+    margin-right: 7px;
+  }
+}
+
+.btn-wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// modal
+
+.backdrop__contacts {
+  left: 0;
+}
+
+.backdrop.is-hidden .modal-franch {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform 250ms $cubic-bezier;
+}
+
+.modal-franch {
+  position: fixed;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: $bg-mobile-menu;
+  border-radius: 22px;
+  transition: transform 250ms $cubic-bezier;
+  @media screen and (max-width: 767.9px) {
+    width: 320px;
+  }
+}
+.button-close {
+  display: inline-flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  padding: 20px;
+  margin-top: 8px;
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $color-text-white;
+  cursor: pointer;
+  fill: black;
+  transition: fill 250ms $cubic-bezier, border-color 250ms $cubic-bezier;
+  background-color: transparent;
+}
+.button-close:hover ::after,
+.button-close:focus ::after {
+  background-color: $bg-btn-dark;
+}
+.button-close:hover ::before,
+.button-close:focus ::before {
+  background-color: $bg-btn-dark;
+}
+.button-close__img {
+  height: 11px;
+  width: 11px;
+}
+.form {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  color: $color-text-white;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.form__input {
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 22px;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    border: 1px solid;
+  }
+}
+.form-textarea {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  transition: border-color 250ms $cubic-bezier;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms $cubic-bezier;
+}
+.form-btn:hover,
+.form-btn:focus,
+.form-footer__btn:hover,
+.form-footer__btn:focus {
+  background-color: $bg-btn-dark;
+}
+.form-img {
+  position: absolute;
+  top: 31px;
+  left: 12px;
+  transition: fill 250ms $cubic-bezier;
+}
+.form__input:hover,
+.form__input:focus,
+textarea:hover,
+textarea:focus {
+  outline: transparent;
+  border: 1px solid $bg-btn-dark-hover;
+}
+.form__input:focus + .form-img,
+.form__input:hover + .form-img {
+  fill: $bg-accent-color;
+}
+.form__label {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
+  color: $color-text-white;
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.contact-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.close:hover {
+  opacity: 1;
+}
+.close::before,
+.close::after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: #333;
+}
+.close::before {
+  transform: rotate(45deg);
+}
+.close::after {
+  transform: rotate(-45deg);
+}
+#map {
+  height: 400px;
+  width: 100%;
+}

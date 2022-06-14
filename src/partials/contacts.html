@@ -1,1 +1,106 @@
 
+    <section class="section contacts" id="contacts">
+      <div class="container contacts__container">
+        <h2 class="visually-hidden">Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+                <p class="contacts__establishment contacts__establishment--yellow">cafe</p>
+              <div class="contact__city contact__content-wrapper">
+                <h3 class="contact__city-head contact__main-head">Chicago</h3>
+                <p class="contact__city-info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </div>
+              <div class="contact__work-time contact__content-wrapper">
+                <h3 class="contacts__day contact__main-head">Monday - Friday</h3>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+                <h3 class="contacts__day contact__main-head">Saturday - Sunday</h3>
+                <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <div class="contacts__contact">
+                <a class = "contacts__contact-link" href="tel:+61(0)383766284">+61(0)383766284</a>
+                <a class = "contacts__contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+          </li>
+          <li class="contacts__item">
+                <p class="contacts__establishment contacts__establishment--green">FOOD TRUCK</p>
+              <div class="contact__city contact__content-wrapper">
+                <h3 class="contact__city-head contact__main-head">Los Angeles</h3>
+                <p class="contact__city-info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </div>
+              <div class="contact__work-time contact__content-wrapper">
+                <h3 class="contacts__day contact__main-head">Monday - Friday</h3>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+                <h3 class="contacts__day contact__main-head">Saturday - Sunday</h3>
+                <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <div class="contacts__contact">
+                <a class = "contacts__contact-link" href="tel:+61(0)383766284">+61(0)383766284</a>
+                <a class = "contacts__contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+          </li>
+           <li class="contacts__item">
+                <p class="contacts__establishment contacts__establishment--yellow">cafe</p>
+              <div class="contact__city contact__content-wrapper">
+                <h3 class="contact__city-head contact__main-head">New York</h3>
+                <p class="contact__city-info">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+              </div>
+              <div class="contact__work-time contact__content-wrapper">
+                <h3 class="contacts__day contact__main-head">Monday - Friday</h3>
+                <p class="contacts__time">06:00 AM - 10:00 PM</p>
+                <h3 class="contacts__day contact__main-head">Saturday - Sunday</h3>
+                <p class="contacts__time">08:00 AM - 16:00 PM</p>
+              </div>
+              <div class="contacts__contact">
+                <a class = "contacts__contact-link" href="tel:+61(0)383766284">+61(0)383766284</a>
+                <a class = "contacts__contact-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+              </div>
+          </li>
+        </ul>
+        <div class="btn-wrapper">
+          <button type="button" class="button contacts__btn" data-modal-open1><span class="contact__btn-name">Our Locations</span>  
+            <svg width="20" height="10" class="contacts__icon">
+              <use href="images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+          <button type="button" class="button contacts__btn contacts__btn--light" data-modal-open><span class="contact__btn-name">Franchise</span>
+            <svg width="20" height="10" class="contacts__icon--dark contacts__icon">
+              <use href="images/symbol-defs.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="backdrop backdrop__contacts is-hidden" data-modal>
+          <div class="modal-franch">
+            <form class="form" action="#">
+              <strong class="form__title">Leave your details, we will call you back in 1 minute</strong>
+              <div class="form__field">
+                <label for="username" class="form__label">Name</label>
+                <input type="text" name="username" id="username" class="form__input " />
+              </div>
+              <div class="form__field">
+                <label for="tel" class="form__label">Phone number</label>
+                <input type="tel" name="tel" id="tel" class="form__input " />
+              </div>
+              <button type="submit" class="contacts__btn contacts__btn--submit button">Submit</button>
+        
+            </form>
+            <button type="button" class="close button-close "  data-modal-close>
+              
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop backdrop__contacts is-hidden" data-modal1>
+      <div class="modal-franch">
+        <h3 class="form__title">We are located here</h3>
+        <!--The div element for the map -->
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2587.6503816053587!2d34.50866783303047!3d49.56661959253242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82f127f3e1ff5%3A0xb4448f502fb43bce!2sAlmazna%2C%2010!5e0!3m2!1sru!2sua!4v1655112685392!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+
+        <button type="button" class="close button-close" data-modal-close1>
+        </button>
+      </div>
+    </div>
+    </div>
+    </section>
