@@ -517,27 +517,27 @@ img {
 .hero {
   background-color: #ffb8ca;
   overflow: hidden;
+}
+
+.hero .container {
+  position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero .container {
     padding-top: 102px;
     padding-bottom: 190px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
+  .hero .container {
     padding-top: 146px;
     padding-bottom: 316px;
   }
-}
-
-.hero .container {
-  position: relative;
-  flex-direction: column;
 }
 
 .hero__img--ellipse {
@@ -863,7 +863,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero__img--girl {
     width: 304px;
     height: 241px;
@@ -1545,7 +1545,7 @@ img {
 }
 
 .about-button:hover, .about-button:focus {
-  background-color: #d41443;
+  background-color: #ecebeb;
   color: #ffffff;
 }
 
@@ -1566,7 +1566,7 @@ img {
 }
 
 .about-wrap-second {
-  z-index: 1;
+  z-index: 0;
   position: relative;
 }
 

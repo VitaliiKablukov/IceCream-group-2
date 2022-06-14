@@ -155,7 +155,7 @@
   }
   &:hover,
   &:focus {
-    background-color: $bg-btn-dark;
+    background-color: $bg-btn-light-hover;
     color: $color-text-white;
   }
 }
@@ -171,7 +171,7 @@
 }
 
 .about-wrap-second {
-  z-index: 1;
+  z-index: 0;
   position: relative;
   @media screen and (min-width: 1280px) {
     margin-top: 91px;
