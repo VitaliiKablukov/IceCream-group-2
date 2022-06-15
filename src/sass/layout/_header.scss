@@ -130,6 +130,10 @@
   transition: transform 700ms $cubic-bezier;
   transform: translateX(0);
 
+  &.is-hidden{
+    transform: translateX(200%);
+      transition: transform 700ms $cubic-bezier;
+  }
   @include mediamin(768px) {
     height: 100vh;
   }
@@ -145,9 +149,10 @@
   }
 }
 
-.header .mob-menu.is-hidden {
-  transform: translateX(200%);
-}
+// .header .mob-menu.is-hidden {
+  
+
+// }
 
 .mob-menu__btn--close {
   position: absolute;
