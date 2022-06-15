@@ -122,10 +122,12 @@
   background-color: $bg-btn-dark;
   border-radius: 20px;
   padding: 7px 15px 7px 13px;
+    transition: background-color 250ms $cubic-bezier;
 
   &:hover,
   &:focus {
     background-color: $bg-btn-dark-hover;
+    transition: background-color 250ms $cubic-bezier;
   }
 
   @include mediamin(1280px) {
@@ -137,9 +139,11 @@
 .anchor__link--light {
   color: $color-btn-light;
   background-color: $bg-btn-light;
+  transition: background-color 250ms $cubic-bezier;
   &:hover,
   &:focus {
     background-color: $bg-btn-light-hover;
+    transition: background-color 250ms $cubic-bezier;
   }
 }
 
@@ -303,6 +307,7 @@
 }
 
 .more__header{
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: #fff;;
   letter-spacing: 0.02em;
@@ -342,9 +347,11 @@
   border: none;
   padding-top: 5px;
   padding-bottom: 5px;
+  transition: outline 250ms $cubic-bezier;
   &:hover,
   &:focus{
-    border: 2px solid $bg-btn-dark-hover;
+    outline: 2px solid $bg-btn-dark-hover;
+    transition: outline 250ms $cubic-bezier;
   }
 }
 
@@ -357,13 +364,16 @@
   background-color: #e17992;
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  bottom: none;
+  transition: stroke 250ms $cubic-bezier;
   &:hover .more__icon-close,
   &:focus .more__icon-close{
     stroke: $bg-btn-dark-hover;
+    transition: stroke 250ms $cubic-bezier;
   }
 }
 .more__icon-close{
@@ -383,6 +393,13 @@
   color: #d41443;
   margin: 0 auto;
   font-weight: 700;
+  transition: background-color 250ms $cubic-bezier;
+  &:hover,
+  &:focus{
+    background-color: $bg-btn-light-hover;
+    transition: background-color 250ms $cubic-bezier;
+
+  }
 }
 
 .more__icon--btn{
