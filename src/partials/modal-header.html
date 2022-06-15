@@ -1,4 +1,3 @@
-
 <div class="backdrop backdrop__contacts is-hidden" header-modal>
   <div class="modal-franch modal__shop">
     <form class="form" action="#">
@@ -30,16 +29,55 @@
           <option value="milkshakes">Milkshakes - 6$</option>
         </select>
       </div>
-      <button type="submit" class="shop__btn">
-        Buy now
-      </button>
+      <button type="submit" class="shop__btn">Buy now</button>
       <p class="shop__text">
         Thanks for your order! Our manager will contact you to clarify the
         details.
       </p>
     </form>
-    <button type="button" class="button-close shop__btn--close" header-modal-close>
+    <button
+      type="button"
+      class="button-close shop__btn--close"
+      header-modal-close
+    >
       <svg class="shop__icon-close" width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-burger-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<div class="backdrop is-hidden" milk-modal>
+  <div class="more-info modal-franch">
+    <img
+      src="./images/Icecream/milk-desk-1x.png"
+      alt=""
+      width="200"
+      height="200"
+      class="more__img"
+    />
+    <h2 class="more__header">Big Eco</h2>
+    <p class="more__text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit hic neque
+      eligendi quas molestiae officia eum sunt velit quo aliquam maxime pariatur
+      dicta nulla reprehenderit exercitationem similique, tempora nam vel.
+    </p>
+    <p class="more__form--text">
+      If you'r interested in this information. Please leave your email below.
+    </p>
+    <form class="more__form">
+      <label class="more__label">
+        <input type="email" class="more__input" placeholder="Email" />
+      </label>
+    </form>
+    <button type="submit" class="more__submit" milk-modal-close2>
+      Submit
+      <svg class="more__icon--btn" width="10" height="10">
+        <use href="./images/symbol-defs.svg#icon-btn-arrow"></use>
+      </svg>
+    </button>
+    <button class="button more-info__btn" milk-modal-close>
+      <svg class="more__icon-close" width="25" height="20">
         <use href="./images/symbol-defs.svg#icon-burger-close"></use>
       </svg>
     </button>
