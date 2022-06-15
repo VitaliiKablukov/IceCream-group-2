@@ -920,7 +920,6 @@ img {
 
 .more__form {
   text-align: center;
-  margin-bottom: 10px;
 }
 
 .more__input {
@@ -976,6 +975,7 @@ img {
   font-size: 20px;
   color: #d41443;
   margin: 0 auto;
+  margin-top: 10px;
   font-weight: 700;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
