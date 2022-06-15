@@ -2849,11 +2849,6 @@ textarea:focus {
   transform: rotate(-45deg);
 }
 
-#map {
-  height: 400px;
-  width: 100%;
-}
-
 .footer {
   background-color: #fff5f6;
 }
