@@ -1,4 +1,4 @@
-<div class="backdrop backdrop__contacts is-hidden" header-modal>
+<div class="backdrop backdrop__contacts " id="header-modal" style="display:none">
   <div class="modal-franch modal__shop">
     <form class="form" action="#">
       <h2 class="shop__title">Buy now</h2>
@@ -35,11 +35,8 @@
         details.
       </p>
     </form>
-    <button
-      type="button"
-      class="button-close shop__btn--close"
-      header-modal-close
-    >
+    <button type="button" class="button-close shop__btn--close" 
+    onclick="document.getElementById('header-modal').style.display='none'">
       <svg class="shop__icon-close" width="40" height="40">
         <use href="./images/symbol-defs.svg#icon-burger-close"></use>
       </svg>
@@ -47,7 +44,7 @@
   </div>
 </div>
 
-<div class="backdrop is-hidden" milk-modal>
+<div class="backdrop is-hidden" id="milk-modal" style="display:none">
   <div class="more-info modal-franch">
     <img
       src="./images/Icecream/milk-desk-1x.png"
@@ -70,13 +67,17 @@
         <input type="email" class="more__input" placeholder="Email" />
       </label>
     </form>
-    <button type="submit" class="more__submit" milk-modal-close2>
+    <!--milk-modal-close2-->
+    <button type="submit" class="more__submit" 
+      onclick="document.getElementById('milk-modal').style.display='none'">
       Submit
       <svg class="more__icon--btn" width="10" height="10">
         <use href="./images/symbol-defs.svg#icon-btn-arrow"></use>
       </svg>
     </button>
-    <button class="button more-info__btn" milk-modal-close>
+    <!--milk-modal-close-->
+    <button class="button more-info__btn" 
+    onclick="document.getElementById('milk-modal').style.display='none'">
       <svg class="more__icon-close" width="25" height="20">
         <use href="./images/symbol-defs.svg#icon-burger-close"></use>
       </svg>
