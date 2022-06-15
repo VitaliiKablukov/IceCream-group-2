@@ -29,7 +29,7 @@
   }
   @media screen and (min-width: 1280px) {
     width: 478px;
-    margin-bottom: 31px;
+    margin-bottom: 60px;
   }
 }
 
@@ -98,7 +98,7 @@
   display: block;
   width: 32px;
   height: 32px;
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 34px;
     height: 34px;
   }
@@ -109,14 +109,13 @@
   stroke: $color-btn-dark;
   transition: fill $transition-time $cubic-bezier;
   @media screen and (min-width: 768px) {
-      width: 34px;
-      height: 34px;
-    }
-  
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer__soc-link:hover .footer__soc-icon,
-.footer__soc-link:focus .footer__soc-icon{
+.footer__soc-link:focus .footer__soc-icon {
   fill: $bg-btn-dark;
 }
 
