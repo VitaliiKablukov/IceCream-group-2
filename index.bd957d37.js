@@ -1,0 +1,2 @@
+!function(){var o={openModalBtn:document.querySelector(".milk-modal-open"),closeModalBtn:document.querySelector(".milk-modal-close"),modal:document.querySelector(".milk-modal"),body:document.querySelector("body")};function e(){document.body.classList.toggle("modal-open"),o.modal.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)}();
+//# sourceMappingURL=index.bd957d37.js.map
